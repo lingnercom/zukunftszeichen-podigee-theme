@@ -1,0 +1,29 @@
+{% if episode %}
+{% assign image = episode.images[0] %}
+{% else %}
+{% assign image = episodes.first.images %}
+{% endif %}
+
+{% if image %}
+<section class="current-episode">
+
+    {% unless episode %}
+    <a href="{{episodes.first.url}}">
+        <h2>
+            <small>{{episodes.first.published_at | date: "%d. %B %Y"}}</small>
+
+            {{episodes.first.title}}
+        </h2>
+
+        <div class="play-container">
+            <i class="icon-play"></i>
+        </div>
+    </a>
+    {% endunless %}
+
+    {% if image != empty %}
+    <img src="{{image}}">
+    {% endif %}
+
+</section>
+{% endif %}

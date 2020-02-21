@@ -1,12 +1,12 @@
 <article class="post">
 
   <header>
-    <h1 class="post-heading">
-      {{episode.title}}
-    </h1>
     <time>
       {{episode.published_at | date: "%d. %B %Y"}}
     </time>
+    <h1 class="post-heading">
+      {{episode.title}}
+    </h1>
   </header>
 
   <section class="post-media-player">
@@ -15,7 +15,7 @@
   <section class="post-downloads">
     {{episode.downloads}}
   </section>
-  
+
   {% if episode.transcript %}
   <section class="post-transcript">
     <a href="{{episode.url}}/transcript">{{'read_transcript' | t}}</a>
@@ -28,15 +28,8 @@
   </section>
 
   <section class="post-show-notes">
-    {% if episode.show_notes != blank %}
-      {{episode.show_notes}}
-    {% endif %}
-    {% if episode.show_notes == blank %}
-      {{episode.description}}
-    {% endif %}
+    {{episode.show_notes}}
   </section>
 
-  {% if blog.show_comments %}
-    {% include 'comments.html' %}
-  {% endif %}
+  {% include 'comments.html' %}
 </article>

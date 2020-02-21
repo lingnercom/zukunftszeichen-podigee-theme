@@ -12,11 +12,19 @@
       </p>
     </div>
   </header>
-  <div class="posts">
-    {% include 'navigation.html' %}
 
+  {% include 'navigation.html' %}
+
+  {% include 'current_episode.html' %}
+
+  <div class="posts">
+    {% if blog.announcement != blank %}
+    <div class="announcement">
+      {{blog.announcement}}
+    </div>
+    {% endif %}
     {{page_content}}
   </div>
-</div>
 
-{% include 'sidebar.html' %}
+  {% include 'footer.html' %}
+</div>
