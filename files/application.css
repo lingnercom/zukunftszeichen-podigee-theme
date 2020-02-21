@@ -98,7 +98,8 @@ q {
 }
 
 small {
-  font-size: 80%
+  font-size: 80%;
+  font-weight: 300;
 }
 
 sub,
@@ -283,11 +284,11 @@ hr {
 }
 
 .navigation {
-  background: #fff;
-  border-bottom: 2px solid #ddd;
   height: 60px;
   position: relative;
   z-index: 1;
+  background-color: #FFFF00;
+  font-weight: 400;
 }
 
 .navigation ul {
@@ -310,7 +311,7 @@ hr {
 }
 
 .navigation a:hover {
-  color: rgb(217, 125, 65);
+  color: black;
 }
 
 .navigation a small {
@@ -396,7 +397,7 @@ hr {
 
 .posts {
   background-color: white;
-  padding: 40px 20px 20px;
+  padding: 0px 15px 15px;
   position: relative;
   z-index: 0;
 }
@@ -417,7 +418,6 @@ hr {
   height: 3.5px;
   background: #324150;
   margin-top: 10px;
-  margin-bottom: 40px;
 }
 
 .post {
@@ -434,6 +434,7 @@ hr {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 30px;
+  padding: 0 0 15px 0;
 }
 
 .post header time {}
@@ -445,6 +446,8 @@ hr {
 .post-description {
   color: #324150;
 }
+
+
 
 .post-media-player {
   margin: 20px 0 0;
