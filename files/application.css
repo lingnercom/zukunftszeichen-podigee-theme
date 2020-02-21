@@ -254,6 +254,7 @@ hr {
 
 .section-main {
   background: #fff;
+  box-shadow: #ddb8b84d 0px -65px 250px;
   margin: 0 auto;
   width: 600px;
 }
