@@ -1,17 +1,6 @@
 <footer>
     {{episodes.first.social_links}}
 
-    {% if podcast.copyright %}<p class="copyright">{{ podcast.copyright }}</p>{% endif %}
-
-    {% if blog.show_podigee_banner %}
-    <p class="powered-by-podigee">
-        <img alt="Podigee logo" src="https://cdn.podigee.com/website-assets/podigee-logo-complete-white-128x92px.png">
-        Published with
-        <a href="https://www.podigee.com/?utm_source=podigee-website&utm_medium=banner&utm_content={{podcast.slug}}&utm_campaign=blog-banner"
-            title="Podigee - The Podcast Publishing Platform">
-            Podigee
-        </a>
-    </p>
-    {% endif %}
+    {% if podcast.copyright %}<p class="copyright">© 2020 by LINGNER.COM</p>{% endif %}
 
 </footer>
