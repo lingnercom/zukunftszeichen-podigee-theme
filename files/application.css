@@ -541,13 +541,14 @@ hr {
 }
 
 
-.new-comment form .field div {
+.new-comment form .field:last-child div {
   padding: 20px 0 20px 0;
 }
 
 .new-comment form .field button {
   padding: 15px 25px;
   background-color: #151b21;
+  color: white;
 }
 
 .new-comment .messages {
