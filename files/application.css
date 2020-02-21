@@ -41,7 +41,7 @@ body {
 }
 
 a {
-  background: transparent
+  color: #324150;
 }
 
 a:focus {
@@ -402,12 +402,31 @@ hr {
   z-index: 0;
 }
 
+.posts-header {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #324150;
+  padding: 15px;
+  letter-spacing: -1px;
+}
+
+.posts-header::after {
+  content: '';
+  display: block;
+  width: 23px;
+  height: 3.5px;
+  background: #324150;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
 .post {
   clear: both;
 }
 
 .post header {
-  text-align: center;
+  text-align: left;
 }
 
 .post header h1 {
@@ -416,17 +435,12 @@ hr {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 30px;
-  margin: 20px 0 5px;
 }
 
-.post header time {
-  background-color: #fff;
-  margin-bottom: 20px;
-  padding: 10px;
-}
+.post header time {}
 
 .post section {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .post-description {
@@ -468,7 +482,7 @@ hr {
 }
 
 .post-social-buttons .link:hover {
-  color: #000;
+  color: white;
 }
 
 .comments .comment {
