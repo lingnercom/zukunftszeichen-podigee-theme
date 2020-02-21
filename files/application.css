@@ -265,6 +265,7 @@ hr {
 
 .top-image:after {
   content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -282,11 +283,10 @@ hr {
   position: absolute;
   text-align: center;
   width: 100%;
-  font-weight: 400;
 }
 
 .title h1 {
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 0.2em;
 }
 
@@ -413,7 +413,7 @@ hr {
   font-weight: 500;
   text-transform: uppercase;
   color: #324150;
-  padding: 15px 0 15px 0;
+  padding: 25px 0 15px 0;
   letter-spacing: -1px;
 }
 
@@ -591,8 +591,18 @@ footer {
   padding: 20px 30px;
   text-align: center;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+footer a {
+  min-width: 20px;
+  display: block;
+}
+
+footer svg {
+  max-width: 20px;
+  padding: 10px 0 10px 0;
 }
 
 footer>.post-social-buttons {
