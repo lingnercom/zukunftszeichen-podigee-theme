@@ -617,6 +617,38 @@ footer>.post-social-buttons {
   display: block;
 }
 
+.section-info {
+  background: #151b21;
+  padding: 35px 30px 35px 30px;
+}
+
+.section-info--title {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 0 15px 0;
+  letter-spacing: -1px;
+}
+
+.section-info--content {
+  color: #bbbbbb;
+}
+
+.section-info--link {
+  color: white;
+  display: block;
+  width: 100%;
+  border: 2px solid white;
+  padding: 12.5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 30px
+}
+
 .section-sidebar {
   float: left;
   width: 340px;
