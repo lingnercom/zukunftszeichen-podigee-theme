@@ -1,3 +1,14 @@
+<div class="posts-header">Über uns</div>
+<section class="post-description">
+  Zukunftszeichen ist die Plattform für B2B-Unternehmen im Trans­formationsprozess. Unsere Mission ist, Erfahrungen zu
+  teilen und das Erlebte weiterzugeben, um eine gemeinsame Zukunft zu sichern. In einem geschützten Raum wagen wir zu
+  denken, zu träumen und zu gestalten. Wir diskutieren, beantworten Fragen und zeigen Lösungswege auf rund um die
+  digitale
+  Transformation.
+
+  Wir wollen Mutmacher für radikale Antworten sein.
+  <a href="https://zukunftszeichen.de/thema/podcasts/">Zukunftszeichen</a>
+</section>
 <div class="posts-header">Alle Folgen</div>
 {% for episode in episodes %}
 <article class="post">
@@ -9,7 +20,7 @@
       <a href="{{episode.url}}">{{episode.title}}</a>
     </h1>
   </header>
-
+  {{episode.player}}
   <section class="post-description">
     {{episode.description}}
   </section>
