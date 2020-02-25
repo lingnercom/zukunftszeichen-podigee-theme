@@ -5,14 +5,15 @@
 {% endif %}
 
 {% if image %}
+<div class="posts-header">Aktuelle Folge</div>
 <section class="current-episode">
 
     {% unless episode %}
     <a href="{{episodes.first.url}}">
         <h2>
             <small>{{episodes.first.published_at | date: "%d. %B %Y"}}</small>
-
             {{episodes.first.title}}
+            {{episodes.first.description}}
         </h2>
 
         {{episodes.first.player}}
