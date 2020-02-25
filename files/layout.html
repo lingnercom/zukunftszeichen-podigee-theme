@@ -20,8 +20,8 @@
       Wir wollen Mutmacher für radikale Antworten sein.</div>
     <a href="https://zukunftszeichen.de/thema/podcasts/" class="section-info--link">Mehr auf unserem Blog</a>
   </div>
-  {% include 'current_episode.html' %}
   <div class="posts">
+    {% include 'current_episode.html' %}
     {% if blog.announcement != blank %}
     <div class="announcement">
       {{blog.announcement}}
