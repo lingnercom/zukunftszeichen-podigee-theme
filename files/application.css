@@ -439,7 +439,8 @@ hr {
   color: #324150;
   font-weight: bolder;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
+  letter-spacing: -1px;
   margin: 0;
   line-height: normal;
 }
