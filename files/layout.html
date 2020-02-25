@@ -6,8 +6,6 @@
   </header>
 
   {% include 'navigation.html' %}
-
-  {% include 'current_episode.html' %}
   <div class="section-info">
     <div class="section-info--title">{{podcast.title}}</div>
     <div class="section-info--content"> Zukunftszeichen ist die Plattform für B2B-Unternehmen im
@@ -22,6 +20,7 @@
       Wir wollen Mutmacher für radikale Antworten sein.</div>
     <a href="https://zukunftszeichen.de/thema/podcasts/" class="section-info--link">Mehr auf unserem Blog</a>
   </div>
+  {% include 'current_episode.html' %}
   <div class="posts">
     {% if blog.announcement != blank %}
     <div class="announcement">
