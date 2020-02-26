@@ -576,17 +576,6 @@ hr {
   margin-bottom: 0px;
 }
 
-.post-social-buttons .link {
-  color: #444;
-  font-size: 24px;
-  margin-right: 5px;
-  text-decoration: none;
-}
-
-.post-social-buttons .link:hover {
-  color: white;
-}
-
 .comments .comment {
   margin-bottom: 20px;
   overflow: hidden;
@@ -671,7 +660,7 @@ hr {
 footer {
   background-color: #151b21;
   color: #707a85;
-  padding: 20px 30px;
+  padding: 25px 30px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -682,14 +671,14 @@ footer a.prominent-item {
   min-width: 20px;
 }
 
-footer svg {
+footer a.prominent-item svg {
   max-width: 20px;
   padding: 10px 0 10px 0;
 }
 
 footer > .post-social-buttons {
   color: rgb(112, 122, 133);
-  padding: 10px 0;
+  padding: 15px 0;
   display: flex;
   align-items: center;
 }
@@ -697,6 +686,10 @@ footer > .post-social-buttons {
 .post-social-buttons--link {
   height: 24px;
   width: 24px;
+}
+
+.post-social-buttons--link:hover {
+  color: white;
 }
 
 .post-social-buttons--link:not(:last-child) {

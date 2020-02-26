@@ -1,4 +1,5 @@
 <footer>
+    {% if podcast.copyright %}<p class="copyright">{{ podcast.copyright }}</p>{% endif %}
     <div class="post-social-buttons">
         <a target="_blank" class="post-social-buttons--link"
             href="https://www.xing.com/communities/groups/zukunftszeichen-die-plattform-fuer-b2b-unternehmen-im-transformationsprozess-4275-1112278/posts">
@@ -38,7 +39,6 @@
             </svg>
         </a>
     </div>
-    {% if podcast.copyright %}<p class="copyright">{{ podcast.copyright }}</p>{% endif %}
     <a class="prominent-item" href="https://www.zukunftszeichen.de"><svg xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 41.87 60.55">
             <title>logo</title>
