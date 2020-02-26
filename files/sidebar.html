@@ -18,24 +18,4 @@
     <li><a href="{{podcast.feeds.vorbis}}" rel="alternate">vorbis/ogg</a></li>
     <li><a href="{{podcast.feeds.opus}}" rel="alternate">opus</a></li>
   </ul>
-
-  <h3>
-    {{'follow_us' | t}}
-  </h3>
-
-  {% assign connections = podcast.connections %}
-
-  <ul class="follow unstyled">
-    {% if connections.twitter != blank %}
-    <li><i class="icon-twitter"></i><a href="https://twitter.com/{{connections.twitter}}"> @{{connections.twitter}}</a>
-    </li>
-    {% endif %}
-    {% if connections.appdotnet != blank %}
-    <li><i class="icon-adn"></i><a href="https://app.net/{{connections.appdotnet}}"> @{{connections.appdotnet}}</a></li>
-    {% endif %}
-    {% if connections.facebook != blank %}
-    <li><i class="icon-facebook"></i><a href="https://www.facebook.com/{{connections.facebook}}">
-        facebook.com/{{connections.facebook}}</a></li>
-    {% endif %}
-  </ul>
 </div>
