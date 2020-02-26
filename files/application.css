@@ -695,9 +695,12 @@ footer > .post-social-buttons {
 }
 
 .post-social-buttons--link {
-  margin: 20px;
   height: 24px;
   width: 24px;
+}
+
+.post-social-buttons--link:not(:last-child) {
+  margin-right: 20px;
 }
 
 .post-social-buttons--link > svg {
