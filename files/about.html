@@ -19,26 +19,6 @@
 </ul>
 {% endif %}
 
-{% assign connections = podcast.connections %}
-{% if connections.twitter != blank || connections.appdotnet != blank || connections.facebook != blank %}
-<h2>{{'follow_us' | t}}</h2>
-
-<ul class="follow unstyled">
-  {% if connections.twitter != blank %}
-  <li><i class="icon-twitter"></i><a href="https://twitter.com/{{connections.twitter}}"> @{{connections.twitter}}</a>
-  </li>
-  {% endif %}
-  {% if connections.appdotnet != blank %}
-  <li><i class="icon-adn"></i><a href="https://app.net/{{connections.appdotnet}}"> @{{connections.appdotnet}}</a></li>
-  {% endif %}
-  {% if connections.facebook != blank %}
-  <li><i class="icon-facebook"></i><a href="https://www.facebook.com/{{connections.facebook}}">
-      facebook.com/{{connections.facebook_name}}</a></li>
-  {% endif %}
-
-</ul>
-{% endif %}
-
 {% if podcast.connections.flattr_id != blank %}
 <h2>{{'flattr_us' | t}}</h2>
 
