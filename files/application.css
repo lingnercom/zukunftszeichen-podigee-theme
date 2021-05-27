@@ -404,13 +404,15 @@ hr {
   text-align: center;
   vertical-align: middle;
   width: 33%;
-}
 
-.navigation li:nth-child(3) {
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+
+.navigation li:nth-child(3) {
+  animation-delay: 2s;
 }
 
 .navigation a {
@@ -724,6 +726,14 @@ footer > .post-social-buttons {
 .section-info {
   background: #151b21;
   padding: 35px 30px 35px 30px;
+}
+
+.section-info > * {
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1s;
 }
 
 .section-info--title {
