@@ -5,8 +5,8 @@
 @font-face {
   font-family: "DIN Next LT Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.woff")
-      format("woff");
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.woff")
+  format("woff");
   font-style: normal;
   font-weight: 300;
   font-display: fallback;
@@ -15,8 +15,8 @@
 @font-face {
   font-family: "DIN Next LT Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Regular.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Regular.woff")
-      format("woff");
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Regular.woff")
+  format("woff");
   font-style: normal;
   font-weight: normal;
   font-display: fallback;
@@ -25,8 +25,8 @@
 @font-face {
   font-family: "DIN Next LT Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Medium.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Medium.woff")
-      format("woff");
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Medium.woff")
+  format("woff");
   font-style: normal;
   font-weight: 500;
   font-display: fallback;
@@ -35,8 +35,8 @@
 @font-face {
   font-family: "DIN Next LT Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Bold.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Bold.woff")
-      format("woff");
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Bold.woff")
+  format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: fallback;
@@ -45,8 +45,8 @@
 @font-face {
   font-family: "PFDin Text Comp Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Medium.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Medium.woff")
-      format("woff");
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Medium.woff")
+  format("woff");
   font-style: normal;
   font-weight: 500;
   font-display: fallback;
@@ -55,8 +55,8 @@
 @font-face {
   font-family: "PFDin Text Comp Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Bold.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Bold.woff")
-      format("woff");
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Bold.woff")
+  format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: fallback;
@@ -65,8 +65,8 @@
 @font-face {
   font-family: "PFDin Text Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Regular.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Regular.woff")
-      format("woff");
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Regular.woff")
+  format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: fallback;
@@ -75,8 +75,8 @@
 @font-face {
   font-family: "PFDin Text Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Light.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Light.woff")
-      format("woff");
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Light.woff")
+  format("woff");
   font-style: normal;
   font-weight: 300;
   font-display: fallback;
@@ -405,9 +405,10 @@ hr {
   vertical-align: middle;
   width: 33%;
 
-  animation: fadeInAnimation ease 1.5s;
+  animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  animation-delay: 500ms;
   opacity: 0;
 }
 
@@ -729,7 +730,7 @@ footer > .post-social-buttons {
 }
 
 .section-info > * {
-  animation: fadeInAnimation ease 1.5s;
+  animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -740,11 +741,11 @@ footer > .post-social-buttons {
 }
 
 .section-info--content {
-  animation-delay: 1.5s;
+  animation-delay: 1.25s;
 }
 
 .section-info--link {
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .section-info--title {
