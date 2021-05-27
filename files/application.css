@@ -385,7 +385,6 @@ hr {
   z-index: 1;
   background-color: #ffff00;
   font-weight: 400;
-  opacity: 0;
 }
 
 .navigation ul {
@@ -404,6 +403,7 @@ hr {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .navigation a {
