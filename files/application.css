@@ -3,75 +3,83 @@
   ...
  */
 @font-face {
-    font-family: "DIN Next LT Pro";
-    src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.woff") format("woff");
-    font-style: normal;
-    font-weight: 300;
-    font-display: fallback;
+  font-family: "DIN Next LT Pro";
+  src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.ttf"),
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.woff")
+  format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: "DIN Next LT Pro";
-    src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Regular.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Regular.woff") format("woff");
-    font-style: normal;
-    font-weight: normal;
-    font-display: fallback;
+  font-family: "DIN Next LT Pro";
+  src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Regular.ttf"),
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Regular.woff")
+  format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: "DIN Next LT Pro";
-    src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Medium.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Medium.woff") format("woff");
-    font-style: normal;
-    font-weight: 500;
-    font-display: fallback;
+  font-family: "DIN Next LT Pro";
+  src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Medium.ttf"),
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Medium.woff")
+  format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: "DIN Next LT Pro";
-    src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Bold.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Bold.woff") format("woff");
-    font-style: normal;
-    font-weight: 700;
-    font-display: fallback;
+  font-family: "DIN Next LT Pro";
+  src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Bold.ttf"),
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Bold.woff")
+  format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: "PFDin Text Comp Pro";
-    src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Medium.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Medium.woff") format("woff");
-    font-style: normal;
-    font-weight: 500;
-    font-display: fallback;
+  font-family: "PFDin Text Comp Pro";
+  src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Medium.ttf"),
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Medium.woff")
+  format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: "PFDin Text Comp Pro";
-    src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Bold.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Bold.woff") format("woff");
-    font-style: normal;
-    font-weight: 700;
-    font-display: fallback;
+  font-family: "PFDin Text Comp Pro";
+  src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Bold.ttf"),
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDINTextCompPro/PFDinTextCompPro-Bold.woff")
+  format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: "PFDin Text Pro";
-    src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Regular.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Regular.woff") format("woff");
-    font-style: normal;
-    font-weight: 400;
-    font-display: fallback;
+  font-family: "PFDin Text Pro";
+  src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Regular.ttf"),
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Regular.woff")
+  format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: "PFDin Text Pro";
-    src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Light.ttf"),
-    url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Light.woff") format("woff");
-    font-style: normal;
-    font-weight: 300;
-    font-display: fallback;
+  font-family: "PFDin Text Pro";
+  src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Light.ttf"),
+  url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/PFDinTextPro/PFDinTextPro-Light.woff")
+  format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
 }
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
@@ -87,743 +95,761 @@ main,
 nav,
 section,
 summary {
-    display: block;
+  display: block;
 }
 
 audio,
 canvas,
 video {
-    display: inline-block;
+  display: inline-block;
 }
 
 audio:not([controls]) {
-    display: none;
-    height: 0;
+  display: none;
+  height: 0;
 }
 
 [hidden],
 template {
-    display: none;
+  display: none;
 }
 
 html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    color: #324150;
+  color: #324150;
 }
 
 a:focus {
-    outline: thin dotted;
+  outline: thin dotted;
 }
 
 a:active,
 a:hover {
-    outline: 0;
+  outline: 0;
 }
 
 h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 abbr[title] {
-    border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
 }
 
 b,
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 dfn {
-    font-style: italic;
+  font-style: italic;
 }
 
 hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
 }
 
 mark {
-    background: #ff0;
-    color: #000;
+  background: #ff0;
+  color: #000;
 }
 
 code,
 kbd,
 pre,
 samp {
-    font-family: monospace, serif;
-    font-size: 1em;
+  font-family: monospace, serif;
+  font-size: 1em;
 }
 
 pre {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 
 q {
-    quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
 small {
-    font-size: 80%;
-    font-weight: 300;
+  font-size: 80%;
+  font-weight: 300;
 }
 
 sub,
 sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sup {
-    top: -0.5em;
+  top: -0.5em;
 }
 
 sub {
-    bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 img {
-    border: 0;
+  border: 0;
 }
 
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 fieldset {
-    border: 1px solid silver;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 button,
 input,
 select,
 textarea {
-    font-family: inherit;
-    font-size: 100%;
-    margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
 }
 
 button,
 input {
-    line-height: normal;
+  line-height: normal;
 }
 
 button,
 select {
-    text-transform: none;
+  text-transform: none;
 }
 
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
+  -webkit-appearance: button;
+  cursor: pointer;
 }
 
 button[disabled],
 html input[disabled] {
-    cursor: default;
+  cursor: default;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 input[type="search"] {
-    -webkit-appearance: textfield;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 textarea {
-    overflow: auto;
-    vertical-align: top;
+  overflow: auto;
+  vertical-align: top;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 *,
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #000;
-    font-family: "DIN Next LT Pro", Arial, sans-serif;
-    color: #363636;
-    padding: 50px 0;
+  background-color: #000;
+  font-family: "DIN Next LT Pro", Arial, sans-serif;
+  color: #363636;
+  padding: 50px 0;
 }
 
 h1,
 h2,
 h3 {
-    font-weight: 200;
-    font-family: "PFDin Text Comp Pro", Arial, sans-serif;
+  font-weight: 200;
+  font-family: "PFDin Text Comp Pro", Arial, sans-serif;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 hr {
-    border-bottom: none;
-    border-top: 1px solid #ccc;
+  border-bottom: none;
+  border-top: 1px solid #ccc;
 }
 
 .announcement {
-    margin: 0 -20px 20px -20px;
-    background: #eedc82;
-    padding: 2px 10px 4px 10px;
+  margin: 0 -20px 20px -20px;
+  background: #eedc82;
+  padding: 2px 10px 4px 10px;
 }
 
 .unstyled {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .unstyled li {
-    list-style: none;
+  list-style: none;
 }
 
 .section-main {
-    background: #fff;
-    box-shadow: #ddb8b833 0px -65px 250px;
-    margin: 0 auto;
-    width: 600px;
+  background: #fff;
+  box-shadow: #ddb8b833 0px -65px 250px;
+  margin: 0 auto;
+  width: 600px;
 }
 
 .meta {
-    position: relative;
+  position: relative;
 }
 
 .top-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #00000073, #ee131300);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #00000073, #ee131300);
 }
 
 .top-image img {
-    display: block;
+  display: block;
 }
 
 .title {
-    bottom: 20px;
-    color: #fff;
-    position: absolute;
-    text-align: center;
-    width: 100%;
+  bottom: 20px;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .title h1 {
-    font-weight: 400;
-    margin-bottom: 0.2em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
 }
 
 .title p {
-    color: #632d15;
+  color: #632d15;
 }
 
 .navigation {
-    height: 60px;
-    position: relative;
-    z-index: 1;
-    background-color: #ffff00;
-    font-weight: 400;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+  background-color: #ffff00;
+  font-weight: 400;
 }
 
 .navigation ul {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
 }
 
 .navigation li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height: 100%;
-    text-align: center;
-    vertical-align: middle;
-    width: 33%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  width: 33%;
 
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-delay: 500ms;
-    opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+  opacity: 0;
 }
 
 .navigation li:nth-child(3) {
-    animation-delay: 4s;
+ animation-delay: 4s;
+ min-width: 180px;
 }
 
 .navigation a {
-    color: #363636;
-    text-decoration: none;
+  color: #363636;
+  text-decoration: none;
 }
 
 .navigation a:hover {
-    color: black;
+  color: black;
 }
 
 .navigation a small {
-    display: block;
+  display: block;
 }
 
 .current-episode {
-    background: rgb(20, 34, 46);
-    color: #fff;
-    overflow: hidden;
-    position: relative;
-    text-shadow: 0 0 5px #222;
-    padding-bottom: 50px;
+  background: rgb(20, 34, 46);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  text-shadow: 0 0 5px #222;
+  padding-bottom: 50px;
 }
 
 .current-episode a {
-    color: #fff;
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    text-decoration: none;
-    z-index: 2;
+  color: #fff;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
 }
 
 .current-episode a .icon-play {
-    box-shadow: 0 0 5px #222;
+  box-shadow: 0 0 5px #222;
 }
 
 .current-episode h2 {
-    font-weight: 200;
-    margin: 0;
-    padding: 30px 0 30px 0;
-    text-align: center;
-    top: 20px;
-    width: 100%;
+  font-weight: 200;
+  margin: 0;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  top: 20px;
+  width: 100%;
 }
 
 .current-episode h2 small {
-    color: #fff;
-    display: block;
-    margin-bottom: 10px;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .current-episode .play-container {
-    height: 85px;
-    overflow: hidden;
-    position: relative;
+  height: 85px;
+  overflow: hidden;
+  position: relative;
 }
 
 .current-episode .icon-play {
-    border: 2px solid #fff;
-    border-radius: 60px;
-    font-size: 40px;
-    height: 60px;
-    left: 50%;
-    margin-left: -30px;
-    padding-left: 8px;
-    padding-top: 8px;
-    position: absolute;
-    text-align: center;
-    top: 5px;
-    width: 60px;
+  border: 2px solid #fff;
+  border-radius: 60px;
+  font-size: 40px;
+  height: 60px;
+  left: 50%;
+  margin-left: -30px;
+  padding-left: 8px;
+  padding-top: 8px;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  width: 60px;
 }
 
 .current-episode img {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
 
 .pagination {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .pagination_next_link {
-    float: right;
+  float: right;
 }
 
 .posts {
-    background-color: white;
-    padding: 50px 15px 15px 15px;
-    position: relative;
-    z-index: 0;
+  background-color: white;
+  padding: 50px 15px 15px 15px;
+  position: relative;
+  z-index: 0;
 }
 
 .posts-header {
-    font-size: 30px;
-    font-family: "PFDin Text Comp Pro", Arial, sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #324150;
+  font-size: 30px;
+  font-family: "PFDin Text Comp Pro", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #324150;
 }
 
 .posts-header::after {
-    content: "";
-    display: block;
-    width: 23px;
-    height: 4px;
-    background: #324150;
+  content: "";
+  display: block;
+  width: 23px;
+  height: 4px;
+  background: #324150;
 }
 
 .post {
-    clear: both;
-    padding-bottom: 25px;
+  clear: both;
+  padding-bottom: 25px;
 }
 
 .post header {
-    text-align: left;
-    padding: 25px 0 0px 0;
+  text-align: left;
+  padding: 25px 0 0px 0;
 }
 
 .post header h1 {
-    color: #324150;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 400;
-    margin: 0;
-    line-height: normal;
+  color: #324150;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  line-height: normal;
 }
 
 .post header h1 a {
-    display: block;
-    word-break: break-word;
-    hyphens: auto;
+  display: block;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .post header time {
 }
 
 .post section {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .post-description {
-    color: #324150;
+  color: #324150;
 }
 
 .post-description p {
-    margin: 8px 0 8px 0;
+  margin: 8px 0 8px 0;
 }
 
 .post-media-player {
-    margin: 20px 0 0;
+  margin: 20px 0 0;
 }
 
 .post-media-player iframe {
-    width: 100%;
+  width: 100%;
 }
 
 .post .post-transcript {
-    text-align: center;
+  text-align: center;
 }
 
 .post-social-media {
-    margin-left: 140px;
-    overflow: hidden;
+  margin-left: 140px;
+  overflow: hidden;
 }
 
 .post .post-flattr {
-    float: left;
-    margin: 3px 0 0 5px;
+  float: left;
+  margin: 3px 0 0 5px;
 }
 
 .post .post-social-buttons {
-    float: left;
-    margin-bottom: 0px;
+  float: left;
+  margin-bottom: 0px;
 }
 
 .comments .comment {
-    margin-bottom: 20px;
-    overflow: hidden;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .comments .comment img {
-    float: left;
-    height: 50px;
-    width: 50px;
+  float: left;
+  height: 50px;
+  width: 50px;
 }
 
 .comments .comment .comment-meta {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .comments .comment .comment-body {
-    margin-left: 60px;
+  margin-left: 60px;
 }
 
 .new-comment {
-    overflow: hidden;
-    margin-bottom: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .new-comment form .field label {
-    display: block;
+  display: block;
 }
 
 .new-comment form .field small {
-    color: #888;
+  color: #888;
 }
 
 .new-comment form .field input,
 .new-comment form .field textarea {
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    outline: none;
-    padding: 5px;
-    width: 548px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  outline: none;
+  padding: 5px;
+  width: 548px;
 }
 
 .new-comment form .field {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .new-comment form .field input,
 .new-comment form .field textarea {
-    width: 100%;
+  width: 100%;
 }
 
 .new-comment form .field:last-child div {
-    padding: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 .new-comment form .field button {
-    padding: 15px 25px;
-    background-color: #151b21;
-    color: white;
+  padding: 15px 25px;
+  background-color: #151b21;
+  color: white;
 }
 
 .new-comment .messages {
-    margin: 20px -20px 0;
+  margin: 20px -20px 0;
 }
 
 .new-comment .messages .message {
-    padding: 5px 20px;
+  padding: 5px 20px;
 }
 
 .new-comment .messages .success {
-    background: #dff0d8;
-    color: #468847;
+  background: #dff0d8;
+  color: #468847;
 }
 
 .new-comment .messages .error {
-    background: #f2dede;
-    color: #b94a48;
+  background: #f2dede;
+  color: #b94a48;
 }
 
 footer {
-    background-color: #151b21;
-    color: #707a85;
-    padding: 25px 30px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  background-color: #151b21;
+  color: #707a85;
+  padding: 25px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer a.prominent-item {
-    min-width: 20px;
+  min-width: 20px;
 }
 
 footer a.prominent-item svg {
-    max-width: 20px;
-    padding: 10px 0 10px 0;
+  max-width: 20px;
+  padding: 10px 0 10px 0;
 }
 
 footer > .post-social-buttons {
-    color: rgb(112, 122, 133);
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
+  color: rgb(112, 122, 133);
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
 }
 
 .post-social-buttons--link {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 .post-social-buttons--link:hover {
-    color: white;
+  color: white;
 }
 
 .post-social-buttons--link:not(:last-child) {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .post-social-buttons--link > svg {
-    max-width: 100%;
-    width: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .archive {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .archive time {
-    display: block;
+  display: block;
 }
 
 .section-info {
-    background: #151b21;
-    padding: 35px 30px 35px 30px;
+  background: #151b21;
+  padding: 35px 30px 35px 30px;
+  animation: scaleDownAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition: height ease 500ms;
 }
 
 .section-info > * {
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    opacity: 0;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .section-info--title {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .section-info--content {
-    animation-delay: 1.25s;
+  animation-delay: 1.25s;
 }
 
 .section-info--link {
-    animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .section-info--title {
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 0 0 15px 0;
-    letter-spacing: -1px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 0 15px 0;
+  letter-spacing: -1px;
 }
 
 .section-info--content {
-    color: #bbbbbb;
+  color: #bbbbbb;
 }
 
 .section-info--link {
-    color: white;
-    display: block;
-    width: 100%;
-    border: 2px solid white;
-    padding: 12.5px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-top: 30px;
-    transition: background-color 150ms;
+  color: white;
+  display: block;
+  width: 100%;
+  border: 2px solid white;
+  padding: 12.5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 30px;
+  transition: background-color 150ms;
 }
 
 .section-info--link:hover {
-    text-decoration: none;
-    background-color: white;
-    color: black;
+  text-decoration: none;
+  background-color: white;
+  color: black;
 }
 
 .section-sidebar {
-    float: left;
-    width: 340px;
+  float: left;
+  width: 340px;
 }
 
 .section-sidebar .feeds {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .section-sidebar .follow {
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 .section-sidebar .follow li i {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 @media (max-width: 600px) {
-    body {
-        padding: 0;
-    }
+  body {
+    padding: 0;
+  }
 
-    .title {
-        bottom: 0;
-    }
+  .title {
+    bottom: 0;
+  }
 
-    .section-main {
-        width: 100%;
-    }
+  .section-main {
+    width: 100%;
+  }
 
-    .navigation {
-        font-size: 80%;
-    }
+  .navigation {
+    font-size: 80%;
+  }
 
-    .post header h1 a {
-        font-size: 25px;
-    }
+  .post header h1 a {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 350px) {
-    .navigation a small {
-        display: none;
-    }
+  .navigation a small {
+    display: none;
+  }
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleDownAnimation {
+  0% {
+    height: 0px;
+  }
+  99% {
+    height: 314px;
+  }
+  100% {
+    min-height: 314px;
+    height: inherit;
+  }
 }
