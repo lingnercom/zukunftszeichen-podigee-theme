@@ -412,7 +412,7 @@ hr {
 }
 
 .navigation li:nth-child(3) {
-  animation-delay: 2s;
+  animation-delay: 4s;
 }
 
 .navigation a {
@@ -733,7 +733,18 @@ footer > .post-social-buttons {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+
+.section-info--title {
   animation-delay: 1s;
+}
+
+.section-info--content {
+  animation-delay: 1.5s;
+}
+
+.section-info--link {
+  animation-delay: 2s;
 }
 
 .section-info--title {
