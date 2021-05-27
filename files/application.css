@@ -385,6 +385,7 @@ hr {
   z-index: 1;
   background-color: #ffff00;
   font-weight: 400;
+  opacity: 0;
 }
 
 .navigation ul {
@@ -399,6 +400,10 @@ hr {
   text-align: center;
   vertical-align: middle;
   width: 33%;
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .navigation a {
@@ -790,5 +795,14 @@ footer > .post-social-buttons {
 @media (max-width: 350px) {
   .navigation a small {
     display: none;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
