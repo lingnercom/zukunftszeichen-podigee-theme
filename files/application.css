@@ -2610,6 +2610,7 @@ a:hover {
 
 .hero {
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: "poster" "text";
   gap: var(--space-large);
@@ -2626,8 +2627,8 @@ a:hover {
 .hero__text {
   grid-area: text;
   max-width: 60ch;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (min-width: 1024px) {
   .hero__text {
@@ -2642,11 +2643,13 @@ a:hover {
   box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.18);
   border-radius: 6px;
   max-width: 18.75rem;
+  margin: 0 auto;
   overflow: hidden;
 }
 @media (min-width: 1024px) {
   .hero__poster {
     max-width: 28.75rem;
+    margin: 0;
   }
 }
 .hero__poster img {
