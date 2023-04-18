@@ -1,0 +1,20 @@
+:root {
+  --podigee-color: #db4615;
+  --main-player-color: #dc4415;
+  --main-player-light-color: #f7d5cf;
+  --player-contrast-text: #ffffff;
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #808080;
+
+  --grid-layout: var(--padding-page-horizontal) [wide-start narrow-start]
+    repeat(6, 1fr) [narrow-end wide-end] var(--padding-page-horizontal);
+  --grid-gutter: 20px;
+
+  --max-width-content: calc(#{remcalc(1200)} + 2 * var(--grid-gutter));
+
+  --transition-default: 120ms ease-in-out;
+
+  --padding-page-horizontal: #{remcalc(18)};
+  --padding-page-vertical: #{remcalc(24)};
+}

@@ -1,0 +1,50 @@
+/*  Breakpoints */
+
+/*  Note: Make changes to these breakpoints if needed */
+/*  MIN WIDTH */
+$xs: 375px;
+$s: 768px;
+$m: 1024px;
+$l: 1280px;
+$xl: 1920px;
+$xxl: 2560px;
+/*  Note: stop changing breakpoints! */
+
+// map needed for generating css-custom-properties
+$min-breakpoints: (
+  'xs': $xs,
+  's': $s,
+  'm': $m,
+  'l': $l,
+  'xl': $xl,
+  'xxl': $xxl,
+);
+
+/*  MAX WIDTH */
+$max-xs: $s - 1px;
+$max-s: $m - 1px;
+$max-m: $l - 1px;
+$max-l: $xl - 1px;
+$max-xl: $xxl - 1px;
+
+// map needed for generating css-custom-properties
+$max-breakpoints: (
+  'max-xs': $xs - 1px,
+  'max-s': $s - 1px,
+  'max-m': $m - 1px,
+  'max-l': $l - 1px,
+  'max-xl': $xl - 1px,
+  'max-xxl': $xxl - 1px,
+);
+
+/* ********************** */
+/* ********************** */
+
+/*  Sizing  */
+
+// max-width content wrapper - don't use 'px'
+$max-content-wrapper: 1680;
+// max-width content - don't use 'px'
+$max-content: 1280;
+// min-width content - don't use 'px'
+$min-content: 370;

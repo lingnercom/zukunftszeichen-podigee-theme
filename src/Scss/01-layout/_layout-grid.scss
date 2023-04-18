@@ -1,0 +1,20 @@
+@use "../00-utilities" as *;
+
+.layout-grid,
+%layout-grid {
+  display: grid;
+  grid-template-columns: var(--grid-layout);
+  grid-auto-rows: min-content;
+  grid-column-gap: var(--grid-gutter);
+}
+
+.layout-content {
+  grid-column: narrow;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-page-vertical) 0;
+}
+
+%page-padding {
+  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
+}

@@ -1,0 +1,161 @@
+@use "functions" as *;
+@use "breakpoints" as *;
+
+//  Fluid sizing depending on screen width, with min and max value
+//  based on example here https://css-tricks.com/snippets/css/fluid-typography/
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+@mixin fluid-type(
+  $type,
+  $value-min,
+  $value-max,
+  $screen-min: $min-content,
+  $screen-max: $max-content
+) {
+  #{$type}: remcalc($value-min);
+  @media only screen and (min-width: #{$screen-min}px) {
+    #{$type}: calc(
+            #{$value-min}px + #{($value-max - $value-min)} *
+            (100vw - #{$screen-min}px) / (#{$screen-max} - #{$screen-min})
+    );
+  }
+  @media only screen and (min-width: #{$screen-max}px) {
+    #{$type}: remcalc($value-max);
+  }
+}
+
+// aspect-ratio
+@mixin aspect-ratio($paddingTop) {
+  position: relative;
+  width: 100%;
+
+  &:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: $paddingTop;
+    pointer-events: none;
+  }
+}
+
+@mixin scrollbars($width, $height, $foreground-color, $background-color) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    background-color: $foreground-color;
+    width: $width;
+    height: $height;
+    cursor: grab;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  @include ie-only {
+    // track + arrows
+    scrollbar-track-color: $background-color;
+    scrollbar-arrow-color: $background-color;
+    // thumb
+    scrollbar-face-color: $foreground-color;
+    // auto-hiding
+    //-ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  // For Firefox
+  @include ff-only {
+    scrollbar-color: $foreground-color $background-color;
+    scrollbar-width: thin;
+  }
+}
+
+// Browser Targeting
+
+/**
+ Only target Internet Explorers (not Edge)
+ */
+@mixin ie-only {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+/**
+ Only target Edge (not Internet Explorers)
+ */
+@mixin edge-only {
+  @supports (-ms-ime-align: auto) {
+    @content;
+  }
+}
+
+/**
+ Only target Safari (mobile and desktop)
+ */
+@mixin safari-only {
+  @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+      @content;
+    }
+  }
+}
+
+/**
+ * Combines targeting of Internet Explorer and Edge
+ */
+@mixin ms-browsers-only {
+  @include ie-only {
+    @content;
+  }
+
+  @include edge-only {
+    @content;
+  }
+}
+
+/**
+ Only target Firefox
+ */
+@mixin ff-only {
+  @supports (-moz-appearance: none) {
+    @content;
+  }
+}
+
+/**
+Only target Chrome & Safari
+ */
+@mixin chromium-browsers-only {
+  @supports (contain: paint) and (not (-moz-appearance: none)) {
+    @content;
+  }
+}
+
+/**
+Only target Chrome
+ */
+@mixin chrome-only {
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    @content;
+  }
+}
+
+@mixin hideScrollbar {
+  // https://blogs.msdn.microsoft.com/kurlak/2013/11/03/hiding-vertical-scrollbars-with-pure-css-in-chrome-ie-6-firefox-opera-and-safari/
+  // There is a CSS rule that can hide scrollbars in Webkit-based browsers (Chrome and Safari).
+  &::-webkit-scrollbar {
+    width: 0 !important
+  }
+  // There is a CSS rule that can hide scrollbars in IE 10+.
+  -ms-overflow-style: none;
+
+  // Use -ms-autohiding-scrollbar if you wish to display on hover.
+  // -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  // There used to be a CSS rule that could hide scrollbars in Firefox, but it has since been deprecated.
+  scrollbar-width: none;
+}
