@@ -1,3 +1,5 @@
+@use "../00-utilities" as *;
+
 .episode {
   display: flex;
   flex-direction: column;
