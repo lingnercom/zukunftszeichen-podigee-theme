@@ -1,0 +1,27 @@
+.episode {
+  display: flex;
+  flex-direction: column;
+
+  &__headline {
+    font-size: remcalc(18);
+    line-height: remcalc(24);
+    font-weight: bold;
+
+    @media (min-width: $l) {
+      font-size: remcalc(20);
+      line-height: remcalc(28);
+    }
+
+    margin-bottom: var(--space-medium);
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $m) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}

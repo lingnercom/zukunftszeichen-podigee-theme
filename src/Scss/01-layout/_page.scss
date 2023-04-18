@@ -11,3 +11,18 @@ a {
     text-decoration: underline;
   }
 }
+
+.section-title {
+  font-size: remcalc(20);
+  line-height: remcalc(26);
+  font-weight: var(--font-weight-medium);
+
+  @media (min-width: $l) {
+    font-size: remcalc(28);
+    line-height: remcalc(36);
+  }
+
+  padding-bottom: remcalc(4);
+  border-bottom: remcalc(6) solid var(--black);
+  margin-bottom: var(--space-medium);
+}

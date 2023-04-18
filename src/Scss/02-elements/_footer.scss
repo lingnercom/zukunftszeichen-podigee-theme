@@ -1,0 +1,39 @@
+@use "../00-utilities" as *;
+
+.footer {
+  &__container {
+    grid-column: wide;
+
+    display: flex;
+    align-items: center;
+    padding: remcalc(10) 0;
+  }
+
+  &__title {
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    gap: var(--space-normal);
+  }
+
+  &__title,
+  &__link {
+    font-size: remcalc(14);
+    line-height: remcalc(22);
+
+    svg {
+      width: remcalc(24);
+      height: remcalc(24);
+      color: var(--black);
+    }
+  }
+
+  &__links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--space-medium);
+  }
+}

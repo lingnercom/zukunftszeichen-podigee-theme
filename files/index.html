@@ -1,17 +1,17 @@
 {% include 'current_episode.html' %}
-<div class="posts-header">Vorherige Folgen</div>
+<div class="section-title">Vorherige Folgen</div>
 {% for episode in episodes %}
 {% if forloop.first == false %}
-<article class="post">
+<article class="episode">
   <header>
     <time>
       {{episode.published_at | date: "%d. %B %Y"}}
     </time>
-    <h1 class="post-heading">
+    <h3 class="episode__headline">
       <a href="{{episode.url}}">{{episode.title}}</a>
-    </h1>
+    </h3>
   </header>
-  <section class="post-description">
+  <p class="episode__text">
     {{episode.description}}
   </section>
   {{episode.player}}

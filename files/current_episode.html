@@ -5,17 +5,17 @@
 {% endif %}
 
 {% unless episode %}
-<div class="posts-header">Aktuelle Folge</div>
-<article class="post">
+<div class="section-title">Aktuelle Folge</div>
+<article class="episode">
     <header>
         <time>
             {{episodes.first.published_at | date: "%d. %B %Y"}}
         </time>
-        <h1 class="post-heading">
+        <h3 class="episode__headline">
             <a href="{{episodes.first.url}}">{{episodes.first.title}}</a>
         </h1>
     </header>
-    <section class="post-description">
+    <p class="episode__text">
         {{episodes.first.description}}
     </section>
     {{episodes.first.player}}
