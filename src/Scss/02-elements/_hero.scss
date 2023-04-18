@@ -2,19 +2,34 @@
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas: "text poster";
-  justify-content: space-between;
-  align-items: center;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "poster" "text";
+
+  gap: var(--space-large);
+  padding: var(--space-large) 0;
+
+  @media (min-width: $m) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "text poster";
+  }
 
   &__text {
     grid-area: text;
-    max-width: 120ch;
+    max-width: 60ch;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    @media (min-width: $m) {
+      font-size: 18px;
+      line-height: 27px;
+    }
   }
 
   &__poster {
     grid-area: poster;
-    padding: remcalc(10);
+    padding: remcalc(5);
     background: white;
     box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.18);
     border-radius: 6px;

@@ -2610,18 +2610,33 @@ a:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas: "text poster";
-  justify-content: space-between;
-  align-items: center;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "poster" "text";
+  gap: var(--space-large);
+  padding: var(--space-large) 0;
+}
+@media (min-width: 1024px) {
+  .hero {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "text poster";
+  }
 }
 .hero__text {
   grid-area: text;
-  max-width: 120ch;
+  max-width: 60ch;
+  font-size: 14px;
+  line-height: 18px;
+}
+@media (min-width: 1024px) {
+  .hero__text {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 .hero__poster {
   grid-area: poster;
-  padding: 0.625rem;
+  padding: 0.3125rem;
   background: white;
   box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.18);
   border-radius: 6px;
