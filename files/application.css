@@ -100,6 +100,7 @@ Only target Chrome
   --space-normal: remcalc(16);
   --space-medium: remcalc(24);
   --space-large: remcalc(40);
+  --color-background: #f9f8f8;
   --podigee-color: #f5df4d;
   --main-player-color: #f5df4d;
   --main-player-light-color: #f7d5cf;
@@ -2593,22 +2594,43 @@ fieldset {
 }
 
 .layout-grid {
-  display: grid;
-  grid-template-columns: var(--grid-layout);
-  grid-auto-rows: min-content;
-  grid-column-gap: var(--grid-gutter);
+  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
-.layout-content {
-  grid-column: narrow;
+body {
+  background: var(--color-background);
+}
+
+* {
+  font-family: "PFDin Text Comp Pro", Arial, sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hero {
   display: flex;
-  flex-direction: column;
-  padding: var(--padding-page-vertical) 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__text {
+  max-width: 500px;
+}
+.hero__poster {
+  aspect-ratio: 1/1;
+  padding: remcalc(10);
+  background: white;
+  box-shadow: 16px 30px rgba(0, 0, 0, 0.18);
+  border-radius: 6px;
 }
 
 .header__container {
   grid-column: wide;
   display: flex;
+  align-items: center;
   padding: 0.625rem 0;
 }
 @media (min-width: 1280px) {
@@ -2617,14 +2639,17 @@ fieldset {
     padding-top: 3.75rem;
   }
 }
+.header__title {
+  font-weight: bold;
+}
 .header__title, .header__link {
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
 @media (min-width: 1280px) {
   .header__title, .header__link {
-    font-size: 1rem;
-    line-height: 1.1875rem;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
   }
 }
 .header__links {

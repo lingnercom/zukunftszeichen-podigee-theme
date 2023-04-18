@@ -1,0 +1,13 @@
+body {
+  background: var(--color-background);
+}
+
+* {
+  font-family: "PFDin Text Comp Pro", Arial, sans-serif;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}

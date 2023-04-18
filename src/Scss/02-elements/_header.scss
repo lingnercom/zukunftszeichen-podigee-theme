@@ -5,6 +5,7 @@
     grid-column: wide;
 
     display: flex;
+    align-items: center;
     padding: remcalc(10) 0;
 
     @media (min-width: $l) {
@@ -13,14 +14,18 @@
     }
   }
 
+  &__title {
+    font-weight: bold;
+  }
+
   &__title,
   &__link {
     font-size: remcalc(14);
     line-height: remcalc(22);
 
     @media (min-width: $l) {
-      font-size: remcalc(16);
-      line-height: remcalc(19);
+      font-size: remcalc(18);
+      line-height: remcalc(20);
     }
   }
 
