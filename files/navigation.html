@@ -1,14 +1,10 @@
-<nav class="navigation">
-  <ul class="unstyled">
-    <li>
-      <a href="{{blog.links.home}}">{{'home' | t}}<small>{{'home_subtitle' | t}}</small></a>
-    </li>
-    <li>
-      <a href="{{blog.links.about}}">{{'about' | t }}<small>{{'about_subtitle' | t}}</small></a>
-    </li>
-    <li>
+<header class="header">
+  <div class="header__container">
+    <a class="header__title" href="/">Zukunftszeichen</a>
+    <div class="header__links">
+      <a class="header__link" href="{{blog.links.about}}">{{'about' | t }}</a>
       <script class="podlove-subscribe-button" src="https://cdn.podigee.com/subscribe-button/javascripts/app.js"
-        data-json-url="https://zukunftszeichen.podigee.io/embed/subscribe_button"></script>
-    </li>
-  </ul>
-</nav>
+      data-json-url="https://zukunftszeichen.podigee.io/embed/subscribe_button"></script>
+    </div>
+  </div>
+</header>

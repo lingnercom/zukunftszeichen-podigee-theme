@@ -6,27 +6,12 @@
     'https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/img/icons/favicon.png?x65110';
   document.getElementsByTagName('head')[0].appendChild(link);
 </script>
-<div class="section-main">
-  <header class="meta">
+<main class="layout-grid">
+  {% include 'navigation.html' %}
+  <div class="meta">
     <div class="top-image">
       <img alt="{{podcast.title}}" src="{{blog.header_image}}">
     </div>
-  </header>
-
-  {% include 'navigation.html' %}
-  <div class="section-info">
-    <div class="section-info--title">{{podcast.title}}</div>
-    <div class="section-info--content"> Zukunftszeichen ist die Plattform für B2B-Unternehmen im
-      Trans­formationsprozess.
-      Unsere Mission ist, Erfahrungen zu
-      teilen und das Erlebte weiterzugeben, um eine gemeinsame Zukunft zu sichern. In einem geschützten Raum wagen wir
-      zu
-      denken, zu träumen und zu gestalten. Wir diskutieren, beantworten Fragen und zeigen Lösungswege auf rund um die
-      digitale
-      Transformation.
-
-      Wir wollen Mutmacher für radikale Antworten sein.</div>
-    <a href="https://zukunftszeichen.de/kategorie/podcasts/" class="section-info--link">Mehr auf zukunftszeichen.de</a>
   </div>
   <div class="posts">
     {% if blog.announcement != blank %}

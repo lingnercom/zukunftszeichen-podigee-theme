@@ -1,0 +1,33 @@
+@use "../00-utilities" as *;
+
+.header {
+  &__container {
+    grid-column: wide;
+
+    display: flex;
+    padding: remcalc(10) 0;
+
+    @media (min-width: $l) {
+      padding-bottom: remcalc(35);
+      padding-top: remcalc(60);
+    }
+  }
+
+  &__title,
+  &__link {
+    font-size: remcalc(14);
+    line-height: remcalc(22);
+
+    @media (min-width: $l) {
+      font-size: remcalc(16);
+      line-height: remcalc(19);
+    }
+  }
+
+  &__links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-medium);
+  }
+}

@@ -1,12 +1,4 @@
 :root {
-  --podigee-color: #f5df4d;
-  --main-player-color: #f5df4d;
-  --main-player-light-color: #f7d5cf;
-  --player-contrast-text: #ffffff;
-  --black: #000000;
-  --white: #ffffff;
-  --grey: #808080;
-
   --grid-layout: var(--padding-page-horizontal) [wide-start narrow-start]
     repeat(6, 1fr) [narrow-end wide-end] var(--padding-page-horizontal);
   --grid-gutter: 20px;
@@ -17,4 +9,26 @@
 
   --padding-page-horizontal: #{remcalc(18)};
   --padding-page-vertical: #{remcalc(24)};
+
+  //
+  // Space
+  //
+  --space-small: #{remcalc(8)};
+  --space-normal: #{remcalc(16)};
+  --space-medium: #{remcalc(24)};
+  --space-large: #{remcalc(40)};
+
+  //
+  // Colors
+  //
+
+  --podigee-color: #f5df4d;
+  --main-player-color: #f5df4d;
+  --main-player-light-color: #f7d5cf;
+  --player-contrast-text: #ffffff;
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #808080;
+
+  --color-text: var(--black);
 }
