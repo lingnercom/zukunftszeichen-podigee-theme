@@ -2604,7 +2604,7 @@ body {
   font-family: "PFDin Text Comp Pro", Arial, sans-serif;
 }
 
-a:hover {
+.link:hover {
   text-decoration: underline;
 }
 
