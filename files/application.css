@@ -2620,6 +2620,7 @@ a:hover {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr auto;
     grid-template-areas: "text poster";
+    align-items: center;
   }
 }
 .hero__text {
@@ -2640,8 +2641,13 @@ a:hover {
   background: white;
   box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.18);
   border-radius: 6px;
-  max-width: 28.75rem;
+  max-width: 18.75rem;
   overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .hero__poster {
+    max-width: 28.75rem;
+  }
 }
 .hero__poster img {
   width: 100%;
