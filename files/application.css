@@ -89,17 +89,14 @@ Only target Chrome & Safari
 Only target Chrome
  */
 :root {
-  --grid-layout: var(--padding-page-horizontal) [wide-start narrow-start]
-    repeat(6, 1fr) [narrow-end wide-end] var(--padding-page-horizontal);
-  --grid-gutter: 20px;
-  --max-width-content: calc(remcalc(1200) + 2 * var(--grid-gutter));
+  --max-width-content: calc(75rem + 2 * var(--grid-gutter));
   --transition-default: 120ms ease-in-out;
-  --padding-page-horizontal: remcalc(18);
-  --padding-page-vertical: remcalc(24);
-  --space-small: remcalc(8);
-  --space-normal: remcalc(16);
-  --space-medium: remcalc(24);
-  --space-large: remcalc(40);
+  --padding-page-horizontal: 1.125rem;
+  --padding-page-vertical: 1.5rem;
+  --space-small: 0.5rem;
+  --space-normal: 1rem;
+  --space-medium: 1.5rem;
+  --space-large: 2.5rem;
   --color-background: #f9f8f8;
   --podigee-color: #f5df4d;
   --main-player-color: #f5df4d;

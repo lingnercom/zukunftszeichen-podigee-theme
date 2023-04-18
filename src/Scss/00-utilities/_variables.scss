@@ -1,8 +1,6 @@
-:root {
-  --grid-layout: var(--padding-page-horizontal) [wide-start narrow-start]
-    repeat(6, 1fr) [narrow-end wide-end] var(--padding-page-horizontal);
-  --grid-gutter: 20px;
+@use "functions" as *;
 
+:root {
   --max-width-content: calc(#{remcalc(1200)} + 2 * var(--grid-gutter));
 
   --transition-default: 120ms ease-in-out;
