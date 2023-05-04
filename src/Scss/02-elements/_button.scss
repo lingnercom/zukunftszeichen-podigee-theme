@@ -6,6 +6,11 @@
   gap: var(--space-small);
   width: max-content;
 
+  svg {
+    width: remcalc(40);
+    height: remcalc(40);
+  }
+
   &--outline {
     font-size: 16px;
     line-height: 20px;
