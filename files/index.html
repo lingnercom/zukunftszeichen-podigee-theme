@@ -3,6 +3,9 @@
 {% for episode in episodes %}
 {% if forloop.first == false %}
 <article class="episode">
+  {% if image != empty %}
+  <img src="{{image}}">
+  {% endif %}
   <header>
     <time>
       {{episode.published_at | date: "%d. %B %Y"}}
@@ -13,7 +16,7 @@
   </header>
   <p class="episode__text">
     {{episode.description}}
-  </section>
+  </p>
   {{episode.player}}
 </article>
 {% endif %}

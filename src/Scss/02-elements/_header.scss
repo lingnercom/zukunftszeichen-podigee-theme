@@ -39,5 +39,11 @@
     justify-content: flex-end;
     align-items: center;
     gap: var(--space-medium);
+
+    .header__link {
+      @media (max-width: $s) {
+        display: none;
+      }
+    }
   }
 }

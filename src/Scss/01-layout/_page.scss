@@ -18,7 +18,7 @@ body {
   display: inline-block;
   font-size: remcalc(20);
   line-height: remcalc(26);
-  font-weight: var(--font-weight-medium);
+  font-weight: 900;
 
   @media (min-width: $l) {
     font-size: remcalc(28);
@@ -28,4 +28,5 @@ body {
   padding-bottom: remcalc(4);
   border-bottom: remcalc(6) solid var(--black);
   margin-bottom: var(--space-medium);
+  margin-top: var(--space-extra-large);
 }
