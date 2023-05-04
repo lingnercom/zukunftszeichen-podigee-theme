@@ -3,6 +3,7 @@
 .button {
   display: flex;
   align-items: center;
+  gap: var(--space-small);
   width: max-content;
 
   &--outline {
@@ -35,4 +36,5 @@
 .buttons {
   display: flex;
   gap: var(--space-small);
+  margin: var(--space-large) 0;
 }
