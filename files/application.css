@@ -2808,6 +2808,11 @@ body {
   fill: white;
 }
 
+.buttons {
+  display: flex;
+  gap: var(--space-small);
+}
+
 .section {
   padding: var(--padding-page-vertical) var(--padding-page-horizontal);
 }
