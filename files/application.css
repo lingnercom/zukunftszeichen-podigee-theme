@@ -2748,6 +2748,9 @@ body {
   flex-direction: column;
   gap: var(--space-medium);
 }
+.episode__text p:empty {
+  display: none;
+}
 
 .footer__container {
   grid-column: wide;
