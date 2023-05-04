@@ -2787,6 +2787,10 @@ body {
   gap: var(--space-small);
   width: max-content;
 }
+.button svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 .button--outline {
   font-size: 16px;
   line-height: 20px;
