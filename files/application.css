@@ -2743,6 +2743,11 @@ body {
     line-height: 27px;
   }
 }
+.episode__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-medium);
+}
 
 .footer__container {
   grid-column: wide;
@@ -2771,6 +2776,19 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: var(--space-medium);
+}
+
+.button--outline {
+  font-size: 16px;
+  line-height: 20px;
+  border: 2px solid var(--black);
+  padding: 0.625rem 1.875rem;
+}
+@media (min-width: 1024px) {
+  .button--outline {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 /*# sourceMappingURL=application.css.map */

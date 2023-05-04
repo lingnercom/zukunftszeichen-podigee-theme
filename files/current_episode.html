@@ -7,6 +7,9 @@
 {% unless episode %}
 <div class="section-title">Aktuelle Folge</div>
 <article class="episode">
+    {% if episode.image != empty %}
+    <img src="{{image}}">
+    {% endif %}
     <header>
         <time>
             {{episodes.first.published_at | date: "%d. %B %Y"}}
@@ -15,12 +18,9 @@
             <a href="{{episodes.first.url}}">{{episodes.first.title}}</a>
             </h1>
     </header>
-    <p class="episode__text">
-        {{episodes.first.description}}
-        </section>
-        <!-- {{episodes.first.player}} -->
-        {% if image != empty %}
-        <img src="{{image}}">
-        {% endif %}
+    <div class="episode__text">
+        <p>{{episode.description}}</p>
+        <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+    </div>
 </article>
 {% endunless %}
