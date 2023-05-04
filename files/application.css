@@ -2592,7 +2592,6 @@ fieldset {
 }
 
 .layout-grid {
-  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
   max-width: 75rem;
   margin: 0 auto;
 }
@@ -2782,7 +2781,8 @@ body {
 }
 
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: max-content;
 }
 .button--outline {
@@ -2797,12 +2797,23 @@ body {
     line-height: 27px;
   }
 }
+.button--round {
+  border-radius: 50%;
+}
+.button--round:hover {
+  background: black;
+  color: white;
+}
+.button--round:hover svg {
+  fill: white;
+}
 
 .section {
-  padding: var(--space-extra-large) 0;
+  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
 }
 .section--grey {
   background: #f4f4f4;
+  padding: calc(var(--padding-page-vertical) + var(--space-extra-large)) var(--padding-page-horizontal);
 }
 
 /*# sourceMappingURL=application.css.map */

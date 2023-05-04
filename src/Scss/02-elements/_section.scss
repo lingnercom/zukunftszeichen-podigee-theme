@@ -1,9 +1,11 @@
 @use "../00-utilities" as *;
 
 .section {
-  padding: var(--space-extra-large) 0;
+  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
 
   &--grey {
     background: #f4f4f4;
+    padding: calc(var(--padding-page-vertical) + var(--space-extra-large))
+      var(--padding-page-horizontal);
   }
 }
