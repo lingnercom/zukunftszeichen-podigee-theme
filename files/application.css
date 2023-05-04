@@ -2778,6 +2778,10 @@ body {
   gap: var(--space-medium);
 }
 
+.button {
+  display: inline-block;
+  width: max-content;
+}
 .button--outline {
   font-size: 16px;
   line-height: 20px;

@@ -1,6 +1,9 @@
 @use "../00-utilities" as *;
 
 .button {
+  display: inline-block;
+  width: max-content;
+
   &--outline {
     font-size: 16px;
     line-height: 20px;

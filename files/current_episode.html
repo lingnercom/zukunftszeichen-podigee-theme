@@ -7,7 +7,7 @@
 {% unless episode %}
 <div class="section-title">Aktuelle Folge</div>
 <article class="episode">
-    {% if episode.image != empty %}
+    {% if image != empty %}
     <img src="{{image}}">
     {% endif %}
     <header>
@@ -19,8 +19,8 @@
             </h1>
     </header>
     <div class="episode__text">
-        <p>{{episode.description}}</p>
-        <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+        <p>{{episodes.first.description}}</p>
+        <a href="{{episodes.first.url}}" class="button button--outline">Mehr Infos zur Folge</a>
     </div>
 </article>
 {% endunless %}
