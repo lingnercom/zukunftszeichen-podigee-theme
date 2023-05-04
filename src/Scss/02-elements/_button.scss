@@ -1,0 +1,16 @@
+@use "../00-utilities" as *;
+
+.button {
+  &--outline {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $m) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    border: 2px solid var(--black);
+    padding: remcalc(10) remcalc(30);
+  }
+}

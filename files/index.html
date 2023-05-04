@@ -3,7 +3,7 @@
 {% for episode in episodes %}
 {% if forloop.first == false %}
 <article class="episode">
-  {% if image != empty %}
+  {% if episode.image != empty %}
   <img src="{{image}}">
   {% endif %}
   <header>
@@ -14,10 +14,10 @@
       <a href="{{episode.url}}">{{episode.title}}</a>
     </h3>
   </header>
-  <p class="episode__text">
-    {{episode.description}}
-  </p>
-  {{episode.player}}
+  <div class="episode__text">
+    <p>{{episode.description}}</p>
+    <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+  </div>
 </article>
 {% endif %}
 {% endfor %}
