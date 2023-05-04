@@ -2805,7 +2805,7 @@ body {
   background: black;
   color: white;
 }
-.button--round:hover svg {
+.button--round:hover svg * {
   fill: white;
 }
 
