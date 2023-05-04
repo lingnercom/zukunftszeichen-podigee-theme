@@ -2798,4 +2798,11 @@ body {
   }
 }
 
+.section {
+  padding: var(--space-extra-large) 0;
+}
+.section--grey {
+  background: #f4f4f4;
+}
+
 /*# sourceMappingURL=application.css.map */

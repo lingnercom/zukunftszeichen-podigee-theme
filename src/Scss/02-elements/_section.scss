@@ -1,0 +1,9 @@
+@use "../00-utilities" as *;
+
+.section {
+  padding: var(--space-extra-large) 0;
+
+  &--grey {
+    background: #f4f4f4;
+  }
+}
