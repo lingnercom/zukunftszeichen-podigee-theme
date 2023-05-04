@@ -7,23 +7,24 @@
   document.getElementsByTagName('head')[0].appendChild(link);
 </script>
 <main class="layout-grid">
-  {% include 'navigation.html' %}
-  <div class="hero">
-    <div class="hero__text">
-      {{ podcast.description }}
+  <section class="section">
+    {% include 'navigation.html' %}
+    <div class="hero">
+      <div class="hero__text">
+        {{ podcast.description }}
+      </div>
+      <div class="hero__poster">
+        <img alt="{{podcast.title}}" src="{{blog.header_image}}">
+      </div>
     </div>
-    <div class="hero__poster">
-      <img alt="{{podcast.title}}" src="{{blog.header_image}}">
-    </div>
+    <div class="posts">
+      {% if blog.announcement != blank %}
+      <div class="announcement">
+        {{blog.announcement}}
+      </div>
+      {% endif %}
+  </section>
+  {{page_content}}
   </div>
-  <div class="posts">
-    {% if blog.announcement != blank %}
-    <div class="announcement">
-      {{blog.announcement}}
-    </div>
-    {% endif %}
-    {{page_content}}
-  </div>
-
   {% include 'footer.html' %}
-</div>
+  </div>
