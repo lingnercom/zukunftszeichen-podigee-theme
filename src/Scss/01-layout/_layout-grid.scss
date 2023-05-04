@@ -4,4 +4,13 @@
 %layout-grid {
   max-width: remcalc(1200);
   margin: 0 auto;
+  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
+
+  &--grey {
+    max-width: unset;
+    width: 100%;
+    background: #f4f4f4;
+    padding: calc(var(--padding-page-vertical) + var(--space-extra-large))
+      var(--padding-page-horizontal);
+  }
 }

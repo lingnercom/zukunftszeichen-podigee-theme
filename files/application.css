@@ -2594,6 +2594,13 @@ fieldset {
 .layout-grid {
   max-width: 75rem;
   margin: 0 auto;
+  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
+}
+.layout-grid--grey {
+  max-width: unset;
+  width: 100%;
+  background: #f4f4f4;
+  padding: calc(var(--padding-page-vertical) + var(--space-extra-large)) var(--padding-page-horizontal);
 }
 
 body {
@@ -2822,14 +2829,6 @@ body {
 }
 .buttons > * {
   flex-shrink: 0;
-}
-
-.section {
-  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
-}
-.section--grey {
-  background: #f4f4f4;
-  padding: calc(var(--padding-page-vertical) + var(--space-extra-large)) var(--padding-page-horizontal);
 }
 
 /*# sourceMappingURL=application.css.map */

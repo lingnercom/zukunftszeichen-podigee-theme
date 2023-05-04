@@ -6,27 +6,29 @@
     'https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/img/icons/favicon.png?x65110';
   document.getElementsByTagName('head')[0].appendChild(link);
 </script>
-<main class="layout-grid">
-  <section class="section">
-    {% include 'navigation.html' %}
-    <div class="hero">
-      <div class="hero__text">
-        {{ podcast.description }}
+<main>
+  <div class="layout-grid">
+    <section class="section">
+      {% include 'navigation.html' %}
+      <div class="hero">
+        <div class="hero__text">
+          {{ podcast.description }}
+        </div>
+        <div class="hero__poster">
+          <img alt="{{podcast.title}}" src="{{blog.header_image}}">
+        </div>
       </div>
-      <div class="hero__poster">
-        <img alt="{{podcast.title}}" src="{{blog.header_image}}">
-      </div>
-    </div>
-    <div class="posts">
-      {% if blog.announcement != blank %}
-      <div class="announcement">
-        {{blog.announcement}}
-      </div>
-      {% endif %}
-  </section>
-  {{page_content}}
-  <section class="section">
-    {% include 'footer.html' %}
-  </section>
+      <div class="posts">
+        {% if blog.announcement != blank %}
+        <div class="announcement">
+          {{blog.announcement}}
+        </div>
+        {% endif %}
+    </section>
+    {{page_content}}
+    <section class="section">
+      {% include 'footer.html' %}
+    </section>
+  </div>
   </div>
   </div>
