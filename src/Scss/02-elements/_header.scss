@@ -6,7 +6,7 @@
   &__container {
     display: flex;
     align-items: center;
-    padding: remcalc(10) 0;
+    padding: remcalc(10) var(--padding-page-horizontal);
 
     @media (min-width: $l) {
       padding-bottom: remcalc(35);

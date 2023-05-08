@@ -2642,6 +2642,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: "poster" "text";
+  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
   gap: var(--space-large);
   padding: var(--space-large) 0;
 }
@@ -2693,7 +2694,7 @@ body {
 .header__container {
   display: flex;
   align-items: center;
-  padding: 0.625rem 0;
+  padding: 0.625rem var(--padding-page-horizontal);
 }
 @media (min-width: 1280px) {
   .header__container {
@@ -2771,7 +2772,7 @@ body {
 .footer__container {
   display: flex;
   align-items: center;
-  padding: 0.625rem 0;
+  padding: 0.625rem var(--padding-page-horizontal);
 }
 .footer__title {
   font-weight: bold;
@@ -2841,6 +2842,7 @@ body {
 
 .section {
   grid-column: content;
+  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
 }
 .section--grey {
   grid-column: 1/-1;
