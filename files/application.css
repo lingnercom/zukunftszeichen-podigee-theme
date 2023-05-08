@@ -2841,7 +2841,7 @@ body {
 }
 
 .section {
-  grid-column: content;
+  grid-column: wide;
   padding: var(--padding-page-vertical) var(--padding-page-horizontal);
 }
 .section--grey {
