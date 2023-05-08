@@ -17,14 +17,12 @@
         <img alt="{{podcast.title}}" src="{{blog.header_image}}">
       </div>
     </div>
-    <div class="posts">
-      {% if blog.announcement != blank %}
-      <div class="announcement">
-        {{blog.announcement}}
-      </div>
-      {% endif %}
-      {{page_content}}
-      {% include 'footer.html' %}
+    {% if blog.announcement != blank %}
+    <div class="announcement">
+      {{blog.announcement}}
     </div>
+    {% endif %}
+    {{page_content}}
+    {% include 'footer.html' %}
   </div>
 </main>

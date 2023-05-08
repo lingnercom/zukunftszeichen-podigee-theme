@@ -2644,7 +2644,7 @@ body {
   grid-template-areas: "poster" "text";
   padding: var(--padding-page-vertical) var(--padding-page-horizontal);
   gap: var(--space-large);
-  padding: var(--space-large) 0;
+  margin: var(--space-large) 0;
 }
 @media (min-width: 1024px) {
   .hero {

@@ -9,7 +9,7 @@
   padding: var(--padding-page-vertical) var(--padding-page-horizontal);
 
   gap: var(--space-large);
-  padding: var(--space-large) 0;
+  margin: var(--space-large) 0;
 
   @media (min-width: $m) {
     grid-template-rows: 1fr;
