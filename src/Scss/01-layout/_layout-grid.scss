@@ -3,10 +3,6 @@
 .layout-grid,
 %layout-grid {
   display: grid;
-  grid-template-columns:
-    max(auto, var(--padding-page-horizontal)) [content-start] min(
-      1fr,
-      #{remcalc(1200)}
-    )
-    [content-end] max(auto, var(--padding-page-horizontal));
+  grid-template-columns: var(--grid-layout);
+  grid-gap: var(--grid-gutter);
 }

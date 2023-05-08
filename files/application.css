@@ -108,6 +108,15 @@ Only target Chrome
   --grey: #808080;
   --color-text: var(--black);
 }
+@media (min-width: 768px) {
+  :root {
+    --padding-page-horizontal: 2rem;
+    --padding-page-vertical: 3rem;
+    --grid-inset: calc((100vw - var(--max-width-content)) / 2);
+    --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start] 1fr [wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
+    --grid-gutter: 1.5rem;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -2593,10 +2602,8 @@ fieldset {
 
 .layout-grid {
   display: grid;
-  grid-template-columns: max(auto, var(--padding-page-horizontal)) [content-start] min(
-      1fr,
-      75rem
-    ) [content-end] max(auto, var(--padding-page-horizontal));
+  grid-template-columns: var(--grid-layout);
+  grid-gap: var(--grid-gutter);
 }
 
 body {
