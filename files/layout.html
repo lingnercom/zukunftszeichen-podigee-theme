@@ -8,27 +8,23 @@
 </script>
 <main>
   <div class="layout-grid">
-    <section class="section">
-      {% include 'navigation.html' %}
-      <div class="hero">
-        <div class="hero__text">
-          {{ podcast.description }}
-        </div>
-        <div class="hero__poster">
-          <img alt="{{podcast.title}}" src="{{blog.header_image}}">
-        </div>
+    {% include 'navigation.html' %}
+    <div class="hero">
+      <div class="hero__text">
+        {{ podcast.description }}
       </div>
-      <div class="posts">
-        {% if blog.announcement != blank %}
-        <div class="announcement">
-          {{blog.announcement}}
-        </div>
-        {% endif %}
-    </section>
-    {{page_content}}
-    <section class="section">
+      <div class="hero__poster">
+        <img alt="{{podcast.title}}" src="{{blog.header_image}}">
+      </div>
+    </div>
+    <div class="posts">
+      {% if blog.announcement != blank %}
+      <div class="announcement">
+        {{blog.announcement}}
+      </div>
+      {% endif %}
+      {{page_content}}
       {% include 'footer.html' %}
-    </section>
+    </div>
   </div>
-  </div>
-  </div>
+</main>

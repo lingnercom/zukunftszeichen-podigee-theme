@@ -1,9 +1,9 @@
 @use "../00-utilities" as *;
 
 .footer {
-  &__container {
-    grid-column: wide;
+  grid-column: 1/-1;
 
+  &__container {
     display: flex;
     align-items: center;
     padding: remcalc(10) 0;

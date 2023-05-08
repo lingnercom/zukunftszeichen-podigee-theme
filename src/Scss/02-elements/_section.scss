@@ -1,4 +1,10 @@
 @use "../00-utilities" as *;
 
 .section {
+  grid-column: content;
+
+  &--grey {
+    grid-column: 1/-1;
+    background: #f4f4f4;
+  }
 }

@@ -2592,15 +2592,11 @@ fieldset {
 }
 
 .layout-grid {
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
-}
-.layout-grid--grey {
-  max-width: unset;
-  width: 100%;
-  background: #f4f4f4;
-  padding: calc(var(--padding-page-vertical) + var(--space-extra-large)) var(--padding-page-horizontal);
+  display: grid;
+  grid-template-columns: max(auto, var(--padding-page-horizontal)) [content-start] min(
+      1fr,
+      75rem
+    ) [content-end] max(auto, var(--padding-page-horizontal));
 }
 
 body {
@@ -2634,6 +2630,7 @@ body {
 }
 
 .hero {
+  grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
@@ -2683,8 +2680,10 @@ body {
   aspect-ratio: 1/1;
 }
 
+.header {
+  grid-column: 1/-1;
+}
 .header__container {
-  grid-column: wide;
   display: flex;
   align-items: center;
   padding: 0.625rem 0;
@@ -2759,8 +2758,10 @@ body {
   display: none;
 }
 
+.footer {
+  grid-column: 1/-1;
+}
 .footer__container {
-  grid-column: wide;
   display: flex;
   align-items: center;
   padding: 0.625rem 0;
@@ -2829,6 +2830,14 @@ body {
 }
 .buttons > * {
   flex-shrink: 0;
+}
+
+.section {
+  grid-column: content;
+}
+.section--grey {
+  grid-column: 1/-1;
+  background: #f4f4f4;
 }
 
 /*# sourceMappingURL=application.css.map */
