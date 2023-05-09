@@ -1,21 +1,28 @@
 @use "../00-utilities" as *;
+@use "../01-layout/layout-grid" as *;
 
 .hero {
   grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas: "poster" "text";
-  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
+  @extend %layout-grid;
 
-  gap: var(--space-large);
-  margin: var(--space-large) 0;
+  &__container {
+    grid-column: wide;
 
-  @media (min-width: $m) {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: "text poster";
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "poster" "text";
+    padding: var(--padding-page-vertical) var(--padding-page-horizontal);
+
+    gap: var(--space-large);
+    margin: var(--space-large) 0;
+
+    @media (min-width: $m) {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "text poster";
+      align-items: center;
+    }
   }
 
   &__text {

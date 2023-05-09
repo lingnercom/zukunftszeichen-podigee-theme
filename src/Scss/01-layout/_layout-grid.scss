@@ -4,5 +4,5 @@
 %layout-grid {
   display: grid;
   grid-template-columns: var(--grid-layout);
-  grid-gap: var(--grid-gutter);
+  column-gap: var(--grid-gutter);
 }
