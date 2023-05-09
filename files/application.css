@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "DIN Next LT Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.ttf"), url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.woff") format("woff");
@@ -117,7 +116,7 @@ Only target Chrome
     --padding-page-horizontal: 2rem;
     --padding-page-vertical: 3rem;
     --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal))
-      [wide-start] 1fr [narrow-start] 1fr 1fr 1fr [narrow-end] 1fr [wide-end]
+      [wide-start] 1fr [narrow-start] 1fr 1fr 1fr [narrow-end] 1fr [wide-end]
       max(var(--grid-inset), var(--padding-page-horizontal));
   }
 }
