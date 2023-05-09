@@ -99,7 +99,7 @@ Only target Chrome
   --space-large: 2.5rem;
   --space-extra-large: 3.75rem;
   --grid-inset: calc((100vw - var(--max-width-content)) / 2);
-  --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start] 1fr [narrow-end wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
+  --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start narrow-start] 1fr [narrow-end wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
   --grid-gutter: 1.5rem;
   --color-background: #f9f8f8;
   --podigee-color: #f5df4d;
