@@ -9,16 +9,6 @@
 <main>
   <div class="layout-grid">
     {% include 'navigation.html' %}
-    <div class="hero">
-      <div class="hero__container">
-        <div class="hero__text">
-          {{ podcast.description }}
-        </div>
-        <div class="hero__poster">
-          <img alt="{{podcast.title}}" src="{{blog.header_image}}">
-        </div>
-      </div>
-    </div>
     {% if blog.announcement != blank %}
     <div class="announcement">
       {{blog.announcement}}

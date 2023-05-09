@@ -1,3 +1,13 @@
+<div class="hero">
+  <div class="hero__container">
+    <div class="hero__text">
+      {{ podcast.description }}
+    </div>
+    <div class="hero__poster">
+      <img alt="{{podcast.title}}" src="{{blog.header_image}}">
+    </div>
+  </div>
+</div>
 <section class="section">
   {% include 'current_episode.html' %}
   {% if episodes.length > 1 %}

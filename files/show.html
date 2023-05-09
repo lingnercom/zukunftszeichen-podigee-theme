@@ -1,34 +1,34 @@
-<article class="post">
-
-  <header>
-    <time>
-      {{episode.published_at | date: "%d. %B %Y"}}
-    </time>
-    <h1 class="post-heading">
-      {{episode.title}}
-    </h1>
-  </header>
-
+<div class="hero">
+  <div class="hero__container">
+    <div class="hero__text">
+      <time>
+        {{episode.published_at | date: "%d. %B %Y"}}
+      </time>
+      <h1 class="post-heading">
+        {{episode.title}}
+      </h1>
+      <p>
+        {{episode.description}}
+      </p>
+    </div>
+    <div class="hero__poster">
+      <img alt="{{podcast.title}}" src="{{blog.header_image}}">
+    </div>
+  </div>
+</div>
+<section class="section">
   <section class="post-media-player">
     {{episode.player}}
   </section>
   <section class="post-downloads">
     {{episode.downloads}}
   </section>
-
   {% if episode.transcript %}
   <section class="post-transcript">
     <a href="{{episode.url}}/transcript">{{'read_transcript' | t}}</a>
   </section>
   {% endif %}
-
-  <section class="post-social-media">
-    {{episode.flattr}}
-  </section>
-
   <section class="post-show-notes">
     {{episode.show_notes}}
   </section>
-
-  {% include 'comments.html' %}
-</article>
+</section>
