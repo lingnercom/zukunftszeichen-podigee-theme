@@ -2802,6 +2802,9 @@ body {
   flex-direction: column;
   gap: var(--space-medium);
 }
+.episodes .button {
+  margin: var(--space-large) auto;
+}
 
 .footer {
   grid-column: 1/-1;
