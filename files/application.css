@@ -2819,7 +2819,7 @@ body {
   fill: white;
 }
 .button:hover svg {
-  transform: scale(1.01);
+  transform: scale(1.05);
 }
 .button svg {
   width: 2.5rem;
