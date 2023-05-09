@@ -1,18 +1,22 @@
 {% unless episode %}
 <div class="section-title">Aktuelle Folge</div>
 <article class="episode">
-    <img src="{{episodes.first.cover_image_url}}">
-    <header>
-        <time>
-            {{episodes.first.published_at | date: "%d. %B %Y"}}
-        </time>
-        <h3 class="episode__headline">
-            <a href="{{episodes.first.url}}">{{episodes.first.title}}</a>
-            </h1>
-    </header>
-    <div class="episode__text">
-        <p>{{episodes.first.description}}</p>
-        <a href="{{episodes.first.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+    <div class="episode__media">
+        <img src="{{episodes.first.cover_image_url}}">
+    </div>
+    <div class="episode__content">
+        <header>
+            <time>
+                {{episodes.first.published_at | date: "%d. %B %Y"}}
+            </time>
+            <h3 class="episode__headline">
+                <a href="{{episodes.first.url}}">{{episodes.first.title}}</a>
+                </h1>
+        </header>
+        <div class="episode__text">
+            <p>{{episodes.first.description}}</p>
+            <a href="{{episodes.first.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+        </div>
     </div>
 </article>
 {% endunless %}

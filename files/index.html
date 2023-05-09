@@ -4,20 +4,22 @@
   {% for episode in episodes %}
   {% if forloop.first == false %}
   <article class="episode">
-    {% if episode.cover_image_url != empty %}
-    <img src="{{episode.cover_image_url}}">
-    {% endif %}
-    <header>
-      <time>
-        {{episode.published_at | date: "%d. %B %Y"}}
-      </time>
-      <h3 class="episode__headline">
-        <a href="{{episode.url}}">{{episode.title}}</a>
-      </h3>
-    </header>
-    <div class="episode__text">
-      <p>{{episode.description}}</p>
-      <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+    <div class="episode__media">
+      <img src="{{episode.cover_image_url}}">
+    </div>
+    <div class="episode__content">
+      <header>
+        <time>
+          {{episode.published_at | date: "%d. %B %Y"}}
+        </time>
+        <h3 class="episode__headline">
+          <a href="{{episode.url}}">{{episode.title}}</a>
+          </h1>
+      </header>
+      <div class="episode__text">
+        <p>{{episode.description}}</p>
+        <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+      </div>
     </div>
   </article>
   {% endif %}
