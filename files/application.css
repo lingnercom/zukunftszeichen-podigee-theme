@@ -98,6 +98,9 @@ Only target Chrome
   --space-medium: 1.5rem;
   --space-large: 2.5rem;
   --space-extra-large: 3.75rem;
+  --grid-inset: calc((100vw - var(--max-width-content)) / 2);
+  --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start] 1fr [wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
+  --grid-gutter: 1.5rem;
   --color-background: #f9f8f8;
   --podigee-color: #f5df4d;
   --main-player-color: #f5df4d;
@@ -112,9 +115,6 @@ Only target Chrome
   :root {
     --padding-page-horizontal: 2rem;
     --padding-page-vertical: 3rem;
-    --grid-inset: calc((100vw - var(--max-width-content)) / 2);
-    --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start] 1fr [wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
-    --grid-gutter: 1.5rem;
   }
 }
 
@@ -2779,7 +2779,7 @@ body {
   grid-column: wide;
   display: flex;
   align-items: center;
-  padding: 0.625rem var(--padding-page-horizontal);
+  padding: 2.5rem var(--padding-page-horizontal);
 }
 .footer__title {
   font-weight: bold;
@@ -2809,10 +2809,20 @@ body {
   align-items: center;
   gap: var(--space-small);
   width: max-content;
+  transition: background 120ms ease-in-out;
+}
+.button:hover {
+  background: black;
+  color: white;
+}
+.button:hover svg * {
+  fill: white;
+  transform: scale(1.1);
 }
 .button svg {
   width: 2.5rem;
   height: 2.5rem;
+  transition: transform 120ms ease-in-out;
 }
 .button--outline {
   font-size: 16px;
@@ -2828,13 +2838,6 @@ body {
 }
 .button--round {
   border-radius: 65px;
-}
-.button--round:hover {
-  background: black;
-  color: white;
-}
-.button--round:hover svg * {
-  fill: white;
 }
 
 .buttons {

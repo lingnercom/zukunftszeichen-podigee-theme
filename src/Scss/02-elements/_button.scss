@@ -5,10 +5,22 @@
   align-items: center;
   gap: var(--space-small);
   width: max-content;
+  transition: background 120ms ease-in-out;
+
+  &:hover {
+    background: black;
+    color: white;
+
+    svg * {
+      fill: white;
+      transform: scale(1.1);
+    }
+  }
 
   svg {
     width: remcalc(40);
     height: remcalc(40);
+    transition: transform 120ms ease-in-out;
   }
 
   &--outline {
@@ -26,15 +38,6 @@
 
   &--round {
     border-radius: 65px;
-
-    &:hover {
-      background: black;
-      color: white;
-
-      svg * {
-        fill: white;
-      }
-    }
   }
 }
 
