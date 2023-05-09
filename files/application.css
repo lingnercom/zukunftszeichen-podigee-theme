@@ -2600,7 +2600,8 @@ fieldset {
   background-color: var(--black);
 }
 
-.layout-grid {
+.layout-grid,
+.section--grey {
   display: grid;
   grid-template-columns: var(--grid-layout);
   grid-gap: var(--grid-gutter);
