@@ -1,9 +1,13 @@
 @use "../00-utilities" as *;
+@use "../01-layout/layout-grid" as *;
 
 .footer {
   grid-column: 1/-1;
+  @extend %layout-grid;
 
   &__container {
+    grid-column: wide;
+
     display: flex;
     align-items: center;
     padding: remcalc(10) var(--padding-page-horizontal);

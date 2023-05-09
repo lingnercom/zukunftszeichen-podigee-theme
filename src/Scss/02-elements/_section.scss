@@ -11,4 +11,8 @@
 
     @extend %layout-grid;
   }
+
+  &__content {
+    grid-column: wide;
+  }
 }
