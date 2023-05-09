@@ -2797,6 +2797,12 @@ body {
   display: none;
 }
 
+.episodes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-medium);
+}
+
 .footer {
   grid-column: 1/-1;
 }

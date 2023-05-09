@@ -1,15 +1,20 @@
 <div class="hero">
   <div class="hero__container">
     <div class="hero__text">
-      <time>
-        {{episode.published_at | date: "%d. %B %Y"}}
-      </time>
-      <h1 class="post-heading">
-        {{episode.title}}
-      </h1>
-      <p>
-        {{episode.description}}
-      </p>
+      <div class="episode__content">
+        <header>
+          <time>
+            {{episode.published_at | date: "%d. %B %Y"}}
+          </time>
+          <h3 class="episode__headline">
+            <a href="{{episode.url}}">{{episode.title}}</a>
+            </h1>
+        </header>
+        <div class="episode__text">
+          <p>{{episode.description}}</p>
+          <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+        </div>
+      </div>
     </div>
     <div class="hero__poster">
       <img alt="{{podcast.title}}" src="{{blog.header_image}}">
@@ -28,6 +33,7 @@
     <a href="{{episode.url}}/transcript">{{'read_transcript' | t}}</a>
   </section>
   {% endif %}
+  <br>
   <section class="post-show-notes">
     {{episode.show_notes}}
   </section>
