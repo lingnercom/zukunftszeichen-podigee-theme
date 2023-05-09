@@ -2,6 +2,9 @@
   <div class="hero__container">
     <div class="hero__text">
       {{ podcast.description }}
+      {% if episodes.first.size > 0 %}
+      <a href="{{epsidoes.first.url}}" class="button button--outline">Aktuelle Folge abspielen</a>
+      {% endif %}
     </div>
     <div class="hero__poster">
       <img alt="{{podcast.title}}" src="{{blog.header_image}}">
