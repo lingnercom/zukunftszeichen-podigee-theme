@@ -4,7 +4,9 @@
   {% for episode in episodes %}
   {% if forloop.first == false %}
   <article class="episode">
-    <img src="{{episode.image}}">
+    {% if episode.cover_image_url != empty %}
+    <img src="{{episode.cover_image_url}}">
+    {% endif %}
     <header>
       <time>
         {{episode.published_at | date: "%d. %B %Y"}}

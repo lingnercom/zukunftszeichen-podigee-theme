@@ -1,24 +1,18 @@
-{% if episode %}
-{% assign image = episode.images[0] %}
-{% else %}
-{% assign image = episodes.first.images %}
-{% endif %}
-
 {% unless episode %}
 <div class="section-title">Aktuelle Folge</div>
 <article class="episode">
-    <img src="{{episode.image}}">
+    <img src="{{episodes.first.cover_image_url}}">
     <header>
         <time>
-            {{episode.published_at | date: "%d. %B %Y"}}
+            {{episodes.first.published_at | date: "%d. %B %Y"}}
         </time>
         <h3 class="episode__headline">
-            <a href="{{episode.url}}">{{episode.title}}</a>
+            <a href="{{episodes.first.url}}">{{episodes.first.title}}</a>
             </h1>
     </header>
     <div class="episode__text">
-        <p>{{episode.description}}</p>
-        <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+        <p>{{episodes.first.description}}</p>
+        <a href="{{episodes.first.url}}" class="button button--outline">Mehr Infos zur Folge</a>
     </div>
 </article>
 {% endunless %}
