@@ -2698,7 +2698,7 @@ body {
 }
 
 .header {
-  grid-column: 1/-1;
+  grid-column: wide;
 }
 .header__container {
   display: flex;

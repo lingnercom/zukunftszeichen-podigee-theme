@@ -1,7 +1,7 @@
 @use "../00-utilities" as *;
 
 .header {
-  grid-column: 1/-1;
+  grid-column: wide;
 
   &__container {
     display: flex;
