@@ -1,15 +1,7 @@
-{% if episode %}
-{% assign image = episode.images[0] %}
-{% else %}
-{% assign image = episodes.first.images %}
-{% endif %}
-
 {% unless episode %}
 <div class="section-title">Aktuelle Folge</div>
 <article class="episode">
-    {% if image != empty %}
-    <img src="{{image}}">
-    {% endif %}
+    <img src="{{episodes.first.image}}">
     <header>
         <time>
             {{episodes.first.published_at | date: "%d. %B %Y"}}
