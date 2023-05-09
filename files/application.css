@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "DIN Next LT Pro";
   src: url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.ttf"), url("https://zukunftszeichen.de/wp-content/themes/lin_digital-kompetenz-theme/assets/fonts/DINNextLTPro/DINNextLTPro-Light.woff") format("woff");
@@ -99,7 +100,7 @@ Only target Chrome
   --space-large: 2.5rem;
   --space-extra-large: 3.75rem;
   --grid-inset: calc((100vw - var(--max-width-content)) / 2);
-  --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start] 1fr [wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
+  --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start] 1fr [narrow-end wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
   --grid-gutter: 1.5rem;
   --color-background: #f9f8f8;
   --podigee-color: #f5df4d;
@@ -115,6 +116,9 @@ Only target Chrome
   :root {
     --padding-page-horizontal: 2rem;
     --padding-page-vertical: 3rem;
+    --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal))
+      [wide-start] 1fr [narrow-start] 1fr 1fr 1fr [narrow-end] 1fr [wide-end]
+      max(var(--grid-inset), var(--padding-page-horizontal));
   }
 }
 
@@ -2785,6 +2789,7 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: var(--space-normal);
 }
 .footer__title, .footer__link {
@@ -2796,7 +2801,7 @@ body {
   height: 1.5rem;
   color: var(--black);
 }
-.footer__links {
+.footer__social {
   flex: 1;
   display: flex;
   justify-content: flex-end;

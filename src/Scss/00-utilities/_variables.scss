@@ -21,12 +21,16 @@
   @media (min-width: $s) {
     --padding-page-horizontal: #{remcalc(32)};
     --padding-page-vertical: #{remcalc(48)};
+
+    --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal))
+      [wide-start] 1fr [narrow-start] 1fr 1fr 1fr [narrow-end] 1fr [wide-end]
+      max(var(--grid-inset), var(--padding-page-horizontal));
   }
 
   --grid-inset: calc((100vw - var(--max-width-content)) / 2);
 
   // prettier-ignore
-  --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start] 1fr [wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
+  --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start] 1fr [narrow-end wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
   --grid-gutter: #{remcalc(24)};
 
   //

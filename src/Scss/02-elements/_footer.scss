@@ -18,6 +18,7 @@
 
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: var(--space-normal);
   }
 
@@ -33,7 +34,7 @@
     }
   }
 
-  &__links {
+  &__social {
     flex: 1;
     display: flex;
     justify-content: flex-end;
