@@ -1,7 +1,9 @@
 <section class="section">
   {% include 'current_episode.html' %}
-  <div class="section-title">Vorherige Folgen</div>
   {% for episode in episodes %}
+  {% if forloop.first %}
+  <div class="section-title">Vorherige Folgen</div>
+  {% endif}
   {% if forloop.first == false %}
   <article class="episode">
     <div class="episode__media">
