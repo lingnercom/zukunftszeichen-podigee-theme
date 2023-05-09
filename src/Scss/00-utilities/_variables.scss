@@ -29,7 +29,7 @@
     --padding-page-vertical: #{remcalc(48)};
 
     --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal))
-      [wide-start] 1fr 1fr [narrow-start] 1fr 1fr 1fr [narrow-end] 1fr 1fr
+      [wide-start] 1fr [narrow-start] repeat(10, 1fr) [narrow-end] 1fr
       [wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
   }
 

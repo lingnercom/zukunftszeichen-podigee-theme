@@ -116,7 +116,7 @@ Only target Chrome
     --padding-page-horizontal: 2rem;
     --padding-page-vertical: 3rem;
     --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal))
-      [wide-start] 1fr 1fr [narrow-start] 1fr 1fr 1fr [narrow-end] 1fr 1fr
+      [wide-start] 1fr [narrow-start] repeat(10, 1fr) [narrow-end] 1fr
       [wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
   }
 }
@@ -2713,6 +2713,7 @@ body {
 }
 .header__title {
   font-weight: bold;
+  align-items: center;
   display: flex;
   gap: var(--space-normal);
 }
@@ -2786,7 +2787,7 @@ body {
 .footer__title {
   font-weight: bold;
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   gap: var(--space-normal);
 }
