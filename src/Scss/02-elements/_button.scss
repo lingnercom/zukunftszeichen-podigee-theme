@@ -13,7 +13,10 @@
 
     svg * {
       fill: white;
-      transform: scale(1.1);
+    }
+
+    svg {
+      transform: scale(1.01);
     }
   }
 
