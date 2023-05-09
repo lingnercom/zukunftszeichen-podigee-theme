@@ -4,6 +4,10 @@
   display: flex;
   gap: var(--space-medium);
 
+  @media (max-width: $max-s) {
+    flex-direction: column;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

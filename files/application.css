@@ -2744,6 +2744,11 @@ body {
   display: flex;
   gap: var(--space-medium);
 }
+@media (max-width: 1023px) {
+  .episode {
+    flex-direction: column;
+  }
+}
 .episode__content {
   display: flex;
   flex-direction: column;
