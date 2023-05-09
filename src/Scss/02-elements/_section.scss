@@ -2,7 +2,7 @@
 @use "../01-layout/layout-grid" as *;
 
 .section {
-  grid-column: wide;
+  grid-column: narrow;
   padding: var(--padding-page-vertical) var(--padding-page-horizontal);
 
   &--grey {
