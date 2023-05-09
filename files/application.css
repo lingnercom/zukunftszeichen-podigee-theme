@@ -2670,7 +2670,7 @@ body {
   line-height: 20px;
   display: flex;
   flex-direction: column;
-  gap: var(--space-small);
+  gap: var(--space-medium);
 }
 @media (min-width: 1024px) {
   .hero__text {
