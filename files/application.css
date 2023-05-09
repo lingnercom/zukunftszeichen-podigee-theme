@@ -2802,7 +2802,7 @@ body {
   flex-direction: column;
   gap: var(--space-medium);
 }
-.episodes .button {
+.episodes .button#archive-button {
   margin: var(--space-large) auto;
 }
 
