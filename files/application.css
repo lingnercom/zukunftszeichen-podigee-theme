@@ -2697,7 +2697,6 @@ body {
   max-width: 18.75rem;
   margin: 0 auto;
   overflow: hidden;
-  position: relative;
 }
 @media (min-width: 1024px) {
   .hero__poster {
