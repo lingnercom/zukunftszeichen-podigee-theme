@@ -1,18 +1,31 @@
 <section class="section">
-  <h1>{{'episode_archive' | t}}</h1>
-  <ul class="unstyled archive">
+  {% include 'current_episode.html' %}
+  {% if episodes.size > 1 %}
+  <div class="section-title">Vorherige Folgen</div>
+  {% endif %}
+  <div class="episodes">
     {% for episode in episodes %}
-    <li>
-      <a href="{{episode.url}}" title="{{episode.title}}">{{episode.title}}</a>
-      <small><time>{{episode.published_at | date:"%d. %B %Y"}}</time></small>
-      <p>{{episode.description | truncate:200}}</p>
-      {{episode.downloads}}
-      <hr>
-    </li>
+    {% if forloop.first == false %}
+    <article class="episode">
+      <div class="episode__media">
+        <img src="{{episode.cover_image_url}}">
+      </div>
+      <div class="episode__content">
+        <header>
+          <time>
+            {{episode.published_at | date: "%d. %B %Y"}}
+          </time>
+          <h3 class="episode__headline">
+            <a href="{{episode.url}}">{{episode.title}}</a>
+          </h3>
+        </header>
+        <div class="episode__text">
+          <p>{{episode.description}}</p>
+          <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+        </div>
+      </div>
+    </article>
+    {% endif %}
     {% endfor %}
-  </ul>
-  <div class="pagination">
-    {{ pagination.previous_page }}
-    {{ pagination.next_page }}
   </div>
 </section>

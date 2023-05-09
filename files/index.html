@@ -14,7 +14,7 @@
   <div class="section-title">Vorherige Folgen</div>
   {% endif %}
   <div class="episodes">
-    {% for episode in episodes %}
+    {% for episode in episodes limit:8 %}
     {% if forloop.first == false %}
     <article class="episode">
       <div class="episode__media">
@@ -37,6 +37,7 @@
     </article>
     {% endif %}
     {% endfor %}
+    <a href="/archive" class="button">Zum Archiv</button>
   </div>
 </section>
 <section class="section section--grey">
