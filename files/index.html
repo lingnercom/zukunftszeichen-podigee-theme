@@ -46,8 +46,17 @@
             <span>
               {% assign seconds = episode.duration | modulo: 60 %}
               {% assign rawMinutes = episode.duration | subtract: seconds %}
-              {{ rawMinutes | divide: 60 }}min
-              {{ seconds }}s
+              {% assign minutes = rawMinutes | divided_by: 60 %}
+              {% if minutes%}
+              {{minutes}}min
+              {% else %}
+              00min
+              {% endif %}
+              {% if seconds%}
+              {{seconds}}s
+              {% else %}
+              00s
+              {% endif %}
             </span>
             </span>
           </div>
