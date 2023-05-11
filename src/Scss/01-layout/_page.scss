@@ -27,12 +27,13 @@ body {
 
   &:after {
     content: "";
+    display: block;
     width: 100%;
     max-width: 10ch;
+    padding-bottom: remcalc(4);
     border-bottom: remcalc(6) solid var(--black);
   }
 
-  padding-bottom: remcalc(4);
   margin-bottom: var(--space-medium);
   margin-top: var(--space-extra-large);
 
