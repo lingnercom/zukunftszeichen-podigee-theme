@@ -2818,6 +2818,7 @@ body {
 }
 .episode__actions {
   display: flex;
+  align-items: center;
   gap: var(--space-medium);
   flex-wrap: wrap;
 }
