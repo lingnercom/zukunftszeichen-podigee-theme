@@ -2605,6 +2605,7 @@ fieldset {
 
 .layout-grid,
 .section--grey,
+.section--yellow,
 .footer,
 .hero {
   display: grid;
@@ -2907,6 +2908,10 @@ body {
 .section--grey {
   grid-column: 1/-1;
   background: #f4f4f4;
+}
+.section--yellow {
+  grid-column: 1/-1;
+  background: #faec95;
 }
 .section__content {
   grid-column: wide;

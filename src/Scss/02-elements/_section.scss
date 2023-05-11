@@ -12,6 +12,13 @@
     @extend %layout-grid;
   }
 
+  &--yellow {
+    grid-column: 1/-1;
+    background: #faec95;
+
+    @extend %layout-grid;
+  }
+
   &__content {
     grid-column: wide;
   }
