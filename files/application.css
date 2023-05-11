@@ -2816,6 +2816,11 @@ body {
 .episode__text p:empty {
   display: none;
 }
+.episode__actions {
+  display: flex;
+  gap: var(--space-medium);
+  flex-wrap: wrap;
+}
 
 .episodes {
   display: flex;

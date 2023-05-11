@@ -63,6 +63,12 @@
       display: none;
     }
   }
+
+  &__actions {
+    display: flex;
+    gap: var(--space-medium);
+    flex-wrap: wrap;
+  }
 }
 
 .episodes {
