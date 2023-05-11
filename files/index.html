@@ -1,7 +1,10 @@
 <div class="hero">
   <div class="hero__container">
     <div class="hero__text">
-      {{ podcast.description }}
+      Im ZUKUNFTSZEICHEN Podcast stehen Digitalwerker und Gestalter aus der deutschen Industrie im Mittelpunkt. Jene,
+      die jeden Tag ihre Unternehmen im Wandel lenken, den digitalen Marathon zu ordnen suchen und die Komplexität zu
+      bändigen wagen. Mit diesen Machern möchte ich in den Austausch gehen, einen Blick durchs Schlüsselloch in die
+      Unternehmen werfen und unterschiedliche Lösungswege beleuchten.
       {% if episodes.first.size > 0 %}
       <a href="{{episodes.first.url}}" class="button button--outline">Aktuelle Folge abspielen</a>
       {% endif %}
@@ -24,7 +27,7 @@
   <div class="section-title">Vorherige Folgen</div>
   {% endif %}
   <div class="episodes">
-    {% for episode in episodes limit:8 %}
+    {% for episode in episodes limit:2 %}
     {% if forloop.first == false %}
     <article class="episode">
       <div class="episode__media">
