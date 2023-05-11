@@ -45,10 +45,10 @@
             <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
             <span>
               {% assign seconds = episode.duration | modulo: 60 %}
-              {{ episode.duration | subtract: seconds | divide: 60 }}min
+              {% assign rawMinutes = epsiode.duration | subtract: seconds }
+              {{ rawMinutes | divide: 60 }}min
               {{ seconds }}s
             </span>
-            {{ episode | jsonify }}
             </span>
           </div>
         </div>
