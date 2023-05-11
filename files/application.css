@@ -2761,8 +2761,6 @@ body {
   flex-direction: column;
   gap: var(--space-medium);
   white-space: pre;
-}
-.episode__text--full {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 5;
