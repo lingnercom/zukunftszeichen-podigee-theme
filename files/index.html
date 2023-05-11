@@ -48,8 +48,7 @@
               {{ episode.duration | subtract: seconds | divide: 60 }}min
               {{ seconds }}s
             </span>
-            {{episode.duration |
-            date: "%R"}}
+            {{ episode | jsonify }}
             </span>
           </div>
         </div>
