@@ -25,8 +25,14 @@ body {
     line-height: remcalc(36);
   }
 
+  &:after {
+    content: "";
+    width: 100%;
+    max-width: 10ch;
+    border-bottom: remcalc(6) solid var(--black);
+  }
+
   padding-bottom: remcalc(4);
-  border-bottom: remcalc(6) solid var(--black);
   margin-bottom: var(--space-medium);
   margin-top: var(--space-extra-large);
 
