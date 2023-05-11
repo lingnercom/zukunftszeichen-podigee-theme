@@ -2720,12 +2720,12 @@ body {
 .episode__content {
   display: flex;
   flex-direction: column;
+  gap: var(--space-small);
 }
 .episode__headline {
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: bold;
-  margin-bottom: var(--space-small);
 }
 @media (min-width: 1280px) {
   .episode__headline {
