@@ -2760,6 +2760,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--space-medium);
+  white-space: pre;
+}
+.episode__text--full {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.episode__text p {
+  display: contents;
 }
 .episode__text p:empty {
   display: none;
