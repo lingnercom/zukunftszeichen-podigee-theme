@@ -14,7 +14,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas: "poster" "text";
-    padding: var(--padding-page-vertical) var(--padding-page-horizontal);
 
     gap: var(--space-large);
     margin: var(--space-large) 0;

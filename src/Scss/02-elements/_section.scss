@@ -3,7 +3,6 @@
 
 .section {
   grid-column: narrow;
-  padding: var(--padding-page-vertical) var(--padding-page-horizontal);
 
   &--grey {
     grid-column: 1/-1;
