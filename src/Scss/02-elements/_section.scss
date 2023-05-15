@@ -15,6 +15,8 @@
     grid-column: 1/-1;
     background: #faec95;
 
+    padding: var(--space-large) 0;
+
     @extend %layout-grid;
   }
 

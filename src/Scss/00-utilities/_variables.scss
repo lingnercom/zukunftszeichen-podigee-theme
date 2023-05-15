@@ -21,7 +21,8 @@
   --grid-inset: calc((100vw - var(--max-width-content)) / 2);
 
   // prettier-ignore
-  --grid-layout: max(var(--grid-inset), var(--padding-page-horizontal)) [wide-start narrow-start] 1fr [narrow-end wide-end] max(var(--grid-inset), var(--padding-page-horizontal));
+  --grid-layout: var(
+    --grid-inset) [wide-start narrow-start] 1fr [narrow-end wide-end] var(--grid-inset);
   --grid-gutter: #{remcalc(24)};
 
   @media (min-width: $s) {
