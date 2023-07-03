@@ -14,8 +14,8 @@
           <p>{{episode.description}}</p>
         </div>
         <div class="episode__actions">
-          <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
           <span>
+            Dauer der Folge:
             {% assign seconds = episode.duration | modulo: 60 %}
             {% assign rawMinutes = episode.duration | subtract: seconds %}
             {% assign minutes = rawMinutes | divided_by: 60 %}
