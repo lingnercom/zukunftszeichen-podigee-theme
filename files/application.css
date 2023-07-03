@@ -2652,6 +2652,7 @@ body {
   max-width: 18.75rem;
   margin: 0 auto;
   overflow: hidden;
+  align-self: start;
 }
 @media (min-width: 1024px) {
   .hero__poster {
@@ -2769,6 +2770,14 @@ body {
   display: contents;
 }
 .episode__text p:empty {
+  display: none;
+}
+.episode__long-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-medium);
+}
+.episode__long-text p:empty {
   display: none;
 }
 .episode__actions {
