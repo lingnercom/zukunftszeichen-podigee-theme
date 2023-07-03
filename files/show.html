@@ -10,7 +10,7 @@
             <a href="{{episode.url}}">{{episode.title}}</a>
             </h1>
         </header>
-        <div class="episode__text">
+        <div class="episode__long-text">
           <p>{{episode.description}}</p>
         </div>
         <div class="episode__actions">
@@ -53,11 +53,6 @@
   <section class="post-downloads">
     {{episode.downloads}}
   </section>
-  {% if episode.transcript %}
-  <section class="post-transcript">
-    <a href="{{episode.url}}/transcript">{{'read_transcript' | t}}</a>
-  </section>
-  {% endif %}
   <br>
   <section class="post-show-notes">
     {{episode.show_notes}}

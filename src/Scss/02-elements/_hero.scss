@@ -67,6 +67,8 @@
     margin: 0 auto;
     overflow: hidden;
 
+    align-self: start;
+
     @media (min-width: $m) {
       max-width: remcalc(460);
       margin: 0;

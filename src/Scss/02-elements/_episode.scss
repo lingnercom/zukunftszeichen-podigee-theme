@@ -72,6 +72,16 @@
     }
   }
 
+  &__long-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-medium);
+
+    p:empty {
+      display: none;
+    }
+  }
+
   &__actions {
     display: flex;
     align-items: center;
