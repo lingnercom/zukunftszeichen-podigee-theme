@@ -2628,6 +2628,14 @@ body {
   left: 60%;
   z-index: -1;
 }
+.hero__headline {
+  grid-area: text;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
 .hero__text {
   grid-area: text;
   max-width: 60ch;

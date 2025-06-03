@@ -39,6 +39,15 @@
     z-index: -1;
   }
 
+  &__headline {
+    grid-area: text;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 12px;
+  }
+
   &__text {
     grid-area: text;
     max-width: 60ch;
