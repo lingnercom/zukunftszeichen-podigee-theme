@@ -2900,4 +2900,22 @@ body {
   grid-column: wide;
 }
 
+.pagination {
+  margin: var(--space-large) 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+}
+.pagination .pagination_previous_link {
+  grid-area: left;
+  justify-self: start;
+}
+.pagination .pagination_next_link {
+  grid-area: right;
+  justify-self: end;
+}
+.pagination a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=application.css.map */
