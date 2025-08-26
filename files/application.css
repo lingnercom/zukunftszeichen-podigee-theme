@@ -2914,6 +2914,9 @@ body {
   grid-area: right;
   justify-self: end;
 }
+.pagination a {
+  font-weight: bold;
+}
 .pagination a:hover {
   text-decoration: underline;
 }
