@@ -1,33 +1,39 @@
 <section class="section">
-  {% include 'current_episode.html' %}
-  {% if episodes.size > 1 %}
-  <div class="section-title">Vorherige Folgen</div>
-  {% endif %}
-  <div class="episodes">
-    {% for episode in episodes %}
-    {% if forloop.first == false %}
-    <article class="episode">
-      <div class="episode__media">
-        <img src="{{episode.cover_image_url}}">
-      </div>
-      <div class="episode__content">
-        <header>
-          <time>
-            {{episode.published_at | date: "%d. %B %Y"}}
-          </time>
-          <h3 class="episode__headline">
-            <a href="{{episode.url}}">{{episode.title}}</a>
-          </h3>
-        </header>
-        <div class="episode__text">
-          <p>{{episode.description}}</p>
-        </div>
-        <div class="episode__actions">
-          <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
-        </div>
-      </div>
-    </article>
+    {% include 'current_episode.html' %}
+    {% if episodes.size > 1 %}
+    <div class="section-title">Vorherige Folgen</div>
     {% endif %}
-    {% endfor %}
-  </div>
+    <div class="episodes">
+        {% for episode in episodes %}
+        {% if forloop.first == false %}
+        <article class="episode">
+            <div class="episode__media">
+                <img src="{{episode.cover_image_url}}">
+            </div>
+            <div class="episode__content">
+                <header>
+                    <time>
+                        {{episode.published_at | date: "%d. %B %Y"}}
+                    </time>
+                    <h3 class="episode__headline">
+                        <a href="{{episode.url}}">{{episode.title}}</a>
+                    </h3>
+                </header>
+                <div class="episode__text">
+                    <p>{{episode.description}}</p>
+                </div>
+                <div class="episode__actions">
+                    <a href="{{episode.url}}" class="button button--outline">Mehr Infos zur Folge</a>
+                </div>
+            </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% if episodes.size > 1 %}
+    <div class="pagination">
+        {{ pagination.previous_page }}
+        {{ pagination.next_page }}
+    </div>
+    {% endif %}
 </section>
