@@ -1,16 +1,28 @@
 @use "../00-utilities" as *;
+@use "../01-layout/layout-grid" as *;
 
 .header {
-  grid-column: wide;
+  // Full-bleed sticky bar with a subtle separator from the white page.
+  grid-column: 1/-1;
+  @extend %layout-grid;
+
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  background: var(--white);
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0 remcalc(2) remcalc(12) rgba(5, 45, 110, 0.06);
 
   &__container {
+    grid-column: wide;
+
     display: flex;
     align-items: center;
-    padding: remcalc(10) 0;
+    padding: remcalc(14) 0;
 
     @media (min-width: $l) {
-      padding-bottom: remcalc(35);
-      padding-top: remcalc(60);
+      padding: remcalc(18) 0;
     }
   }
 

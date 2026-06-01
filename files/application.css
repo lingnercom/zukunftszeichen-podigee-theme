@@ -2562,6 +2562,7 @@ fieldset {
 .layout-grid,
 .section--cta,
 .footer,
+.header,
 .hero {
   display: grid;
   grid-template-columns: var(--grid-layout);
@@ -2700,17 +2701,23 @@ body {
 }
 
 .header {
-  grid-column: wide;
+  grid-column: 1/-1;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--white);
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0 0.125rem 0.75rem rgba(5, 45, 110, 0.06);
 }
 .header__container {
+  grid-column: wide;
   display: flex;
   align-items: center;
-  padding: 0.625rem 0;
+  padding: 0.875rem 0;
 }
 @media (min-width: 1280px) {
   .header__container {
-    padding-bottom: 2.1875rem;
-    padding-top: 3.75rem;
+    padding: 1.125rem 0;
   }
 }
 .header__title {
@@ -3011,7 +3018,6 @@ body {
 }
 
 .post-show-notes,
-.post-downloads,
 .episode__long-text {
   max-width: 70ch;
   font-size: 16px;
@@ -3020,7 +3026,6 @@ body {
 }
 @media (min-width: 1024px) {
   .post-show-notes,
-  .post-downloads,
   .episode__long-text {
     font-size: 18px;
   }
@@ -3030,11 +3035,6 @@ body {
 .post-show-notes ol,
 .post-show-notes blockquote,
 .post-show-notes figure,
-.post-downloads p,
-.post-downloads ul,
-.post-downloads ol,
-.post-downloads blockquote,
-.post-downloads figure,
 .episode__long-text p,
 .episode__long-text ul,
 .episode__long-text ol,
@@ -3043,12 +3043,10 @@ body {
   margin: 0 0 var(--space-normal);
 }
 .post-show-notes > *:last-child,
-.post-downloads > *:last-child,
 .episode__long-text > *:last-child {
   margin-bottom: 0;
 }
 .post-show-notes p:empty,
-.post-downloads p:empty,
 .episode__long-text p:empty {
   display: none;
 }
@@ -3058,12 +3056,6 @@ body {
 .post-show-notes h4,
 .post-show-notes h5,
 .post-show-notes h6,
-.post-downloads h1,
-.post-downloads h2,
-.post-downloads h3,
-.post-downloads h4,
-.post-downloads h5,
-.post-downloads h6,
 .episode__long-text h1,
 .episode__long-text h2,
 .episode__long-text h3,
@@ -3076,26 +3068,20 @@ body {
   margin: var(--space-large) 0 var(--space-small);
 }
 .post-show-notes h1,
-.post-downloads h1,
 .episode__long-text h1 {
   font-size: 28px;
 }
 .post-show-notes h2,
-.post-downloads h2,
 .episode__long-text h2 {
   font-size: 24px;
 }
 .post-show-notes h3,
-.post-downloads h3,
 .episode__long-text h3 {
   font-size: 20px;
 }
 .post-show-notes h4,
 .post-show-notes h5,
 .post-show-notes h6,
-.post-downloads h4,
-.post-downloads h5,
-.post-downloads h6,
 .episode__long-text h4,
 .episode__long-text h5,
 .episode__long-text h6 {
@@ -3103,57 +3089,45 @@ body {
 }
 .post-show-notes strong,
 .post-show-notes b,
-.post-downloads strong,
-.post-downloads b,
 .episode__long-text strong,
 .episode__long-text b {
   font-weight: 700;
 }
 .post-show-notes em,
 .post-show-notes i,
-.post-downloads em,
-.post-downloads i,
 .episode__long-text em,
 .episode__long-text i {
   font-style: italic;
 }
 .post-show-notes a,
-.post-downloads a,
 .episode__long-text a {
   color: var(--brand-blue-accent);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 .post-show-notes a:hover,
-.post-downloads a:hover,
 .episode__long-text a:hover {
   text-decoration: none;
 }
 .post-show-notes ul,
 .post-show-notes ol,
-.post-downloads ul,
-.post-downloads ol,
 .episode__long-text ul,
 .episode__long-text ol {
   padding-left: 1.4em;
 }
 .post-show-notes ul,
-.post-downloads ul,
 .episode__long-text ul {
   list-style: disc;
 }
 .post-show-notes ol,
-.post-downloads ol,
 .episode__long-text ol {
   list-style: decimal;
 }
 .post-show-notes li,
-.post-downloads li,
 .episode__long-text li {
   margin-bottom: var(--space-small);
 }
 .post-show-notes blockquote,
-.post-downloads blockquote,
 .episode__long-text blockquote {
   padding-left: var(--space-normal);
   border-left: 0.25rem solid var(--brand-blue-soft);
@@ -3161,18 +3135,25 @@ body {
   font-style: italic;
 }
 .post-show-notes img,
-.post-downloads img,
 .episode__long-text img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 .post-show-notes hr,
-.post-downloads hr,
 .episode__long-text hr {
   border: 0;
   border-top: 1px solid var(--brand-blue-soft);
   margin: var(--space-large) 0;
+}
+
+.post-media-player {
+  margin-top: var(--space-large);
+}
+
+.post-show-notes {
+  margin-top: var(--space-large);
+  margin-bottom: var(--space-extra-large);
 }
 
 /*# sourceMappingURL=application.css.map */

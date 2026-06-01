@@ -6,7 +6,6 @@
 // typography for this rich-text block here.
 //
 .post-show-notes,
-.post-downloads,
 .episode__long-text {
   max-width: 70ch;
 
@@ -120,4 +119,17 @@
     border-top: 1px solid var(--brand-blue-soft);
     margin: var(--space-large) 0;
   }
+}
+
+//
+// Episode page layout: rhythm between player, downloads and show notes,
+// plus breathing room before the footer.
+//
+.post-media-player {
+  margin-top: var(--space-large);
+}
+
+.post-show-notes {
+  margin-top: var(--space-large);
+  margin-bottom: var(--space-extra-large);
 }
