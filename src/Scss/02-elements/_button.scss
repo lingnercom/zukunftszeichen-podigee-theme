@@ -22,12 +22,14 @@
   font-weight: 500;
 
   background: var(--brand-blue);
-  color: var(--white);
+  // Podigee's preview chrome injects `.podigee-preview a { color: #000 }`,
+  // which out-specifies a plain `.button`; force the brand colour through.
+  color: var(--white) !important;
   border: 2px solid var(--brand-blue);
   cursor: pointer;
 
   transition: background-color var(--transition-default),
-    border-color var(--transition-default), color var(--transition-default);
+    border-color var(--transition-default);
 
   @media (min-width: $l) {
     height: remcalc(48);
@@ -37,26 +39,12 @@
   &:hover {
     background: var(--brand-blue-hover);
     border-color: var(--brand-blue-hover);
-    color: var(--white);
   }
 
   svg {
     width: remcalc(20);
     height: remcalc(20);
     flex-shrink: 0;
-  }
-
-  // Secondary / outline variant
-  &--outline {
-    background: transparent;
-    color: var(--brand-blue);
-    border: 2px solid var(--brand-blue);
-
-    &:hover {
-      background: var(--brand-blue);
-      border-color: var(--brand-blue);
-      color: var(--white);
-    }
   }
 
   &--round {

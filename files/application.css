@@ -2866,6 +2866,9 @@ body {
   height: 1.5rem;
   color: var(--white);
 }
+.footer a {
+  color: var(--white) !important;
+}
 .footer__link a:hover {
   text-decoration: underline;
 }
@@ -2899,10 +2902,10 @@ body {
   line-height: 1;
   font-weight: 500;
   background: var(--brand-blue);
-  color: var(--white);
+  color: var(--white) !important;
   border: 2px solid var(--brand-blue);
   cursor: pointer;
-  transition: background-color var(--transition-default), border-color var(--transition-default), color var(--transition-default);
+  transition: background-color var(--transition-default), border-color var(--transition-default);
 }
 @media (min-width: 1280px) {
   .button {
@@ -2913,22 +2916,11 @@ body {
 .button:hover {
   background: var(--brand-blue-hover);
   border-color: var(--brand-blue-hover);
-  color: var(--white);
 }
 .button svg {
   width: 1.25rem;
   height: 1.25rem;
   flex-shrink: 0;
-}
-.button--outline {
-  background: transparent;
-  color: var(--brand-blue);
-  border: 2px solid var(--brand-blue);
-}
-.button--outline:hover {
-  background: var(--brand-blue);
-  border-color: var(--brand-blue);
-  color: var(--white);
 }
 .button--round {
   border-radius: 999px;

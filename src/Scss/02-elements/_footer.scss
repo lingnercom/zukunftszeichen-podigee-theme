@@ -2,6 +2,7 @@
 @use "../01-layout/layout-grid" as *;
 
 .footer {
+  // Full-bleed dark band; the inner container holds the content column.
   grid-column: 1/-1;
   @extend %layout-grid;
 
@@ -36,6 +37,11 @@
       height: remcalc(24);
       color: var(--white);
     }
+  }
+
+  // Force link colour over Podigee's injected `.podigee-preview a { color:#000 }`
+  a {
+    color: var(--white) !important;
   }
 
   &__link a:hover {
