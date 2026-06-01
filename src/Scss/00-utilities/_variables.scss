@@ -38,13 +38,15 @@
   // Colors
   //
 
-  --color-background: #f9f8f8;
+  --color-background: #ffffff;
 
   //
   // Brand palette (Stefan Lingner / Zukunftszeichen)
   //
   --brand-blue: #052d6e; // primary dark blue
+  --brand-blue-hover: #073a8a; // primary button hover
   --brand-blue-accent: #1032cf; // links / accents
+  --brand-navy-deep: #031842; // footer background
   --brand-tint: #eff0f9; // light section background
   --brand-blue-soft: #becafd; // soft borders / highlights
 
@@ -55,6 +57,7 @@
   --black: #000000;
   --white: #ffffff;
   --grey: #808080;
+  --text-muted: #737373;
 
   --color-text: var(--black);
 }

@@ -5,12 +5,15 @@
   grid-column: 1/-1;
   @extend %layout-grid;
 
+  background: var(--brand-navy-deep);
+  color: var(--white);
+
   &__container {
     grid-column: wide;
 
     display: flex;
     align-items: center;
-    padding: remcalc(40) 0;
+    padding: remcalc(48) 0;
   }
 
   &__title {
@@ -24,14 +27,19 @@
 
   &__title,
   &__link {
+    color: var(--white);
     font-size: remcalc(14);
     line-height: remcalc(22);
 
     svg {
       width: remcalc(24);
       height: remcalc(24);
-      color: var(--black);
+      color: var(--white);
     }
+  }
+
+  &__link a:hover {
+    text-decoration: underline;
   }
 
   &__social {
@@ -40,5 +48,14 @@
     justify-content: flex-end;
     align-items: center;
     gap: var(--space-medium);
+
+    .footer__link a {
+      display: flex;
+      transition: opacity var(--transition-default);
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
 }

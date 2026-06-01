@@ -4,26 +4,65 @@
 .section {
   grid-column: narrow;
 
-  &--grey {
-    grid-column: 1/-1;
-    background: #f4f4f4;
-
-    @extend %layout-grid;
-  }
-
-  &--yellow {
+  // Subscribe / follow call-to-action band
+  &--cta {
     grid-column: 1/-1;
     background: var(--brand-tint);
-    color: var(--brand-blue);
 
-    padding: var(--space-large) 0;
+    padding: var(--space-extra-large) 0;
 
     @extend %layout-grid;
 
-    .section-title,
-    .section-title:after {
+    .section__content {
+      grid-column: wide;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .section-title {
       color: var(--brand-blue);
-      border-color: var(--brand-blue);
+      text-align: center;
+      max-width: none;
+      margin: 0 0 var(--space-small);
+
+      font-size: remcalc(28);
+      line-height: 1.1;
+      font-weight: 700;
+
+      @media (min-width: $l) {
+        font-size: remcalc(36);
+        line-height: remcalc(40);
+      }
+
+      // No eyebrow stripe in this section
+      &:after {
+        display: none;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: remcalc(14);
+    }
+
+    .buttons {
+      justify-content: center;
+      margin-top: var(--space-large);
+    }
+
+    // Platform icons are monochrome (inherit the button text colour)
+    .button svg {
+      width: auto;
+      height: remcalc(20);
+
+      path,
+      g path {
+        fill: currentColor;
+      }
     }
   }
 

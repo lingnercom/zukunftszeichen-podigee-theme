@@ -50,9 +50,11 @@ Only target Chrome
   --grid-layout: var(
     --grid-inset) [wide-start narrow-start] 1fr [narrow-end wide-end] var(--grid-inset);
   --grid-gutter: 1.5rem;
-  --color-background: #f9f8f8;
+  --color-background: #ffffff;
   --brand-blue: #052d6e;
+  --brand-blue-hover: #073a8a;
   --brand-blue-accent: #1032cf;
+  --brand-navy-deep: #031842;
   --brand-tint: #eff0f9;
   --brand-blue-soft: #becafd;
   --podigee-color: var(--brand-blue);
@@ -62,6 +64,7 @@ Only target Chrome
   --black: #000000;
   --white: #ffffff;
   --grey: #808080;
+  --text-muted: #737373;
   --color-text: var(--black);
 }
 @media (min-width: 768px) {
@@ -2557,8 +2560,7 @@ fieldset {
 }
 
 .layout-grid,
-.section--grey,
-.section--yellow,
+.section--cta,
 .footer,
 .hero {
   display: grid;
@@ -2637,7 +2639,7 @@ body {
   font-size: 32px;
   line-height: 40px;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--brand-blue);
   margin-bottom: 12px;
 }
 .hero__text {
@@ -2654,6 +2656,25 @@ body {
     font-size: 18px;
     line-height: 27px;
   }
+}
+.hero .episode__headline {
+  font-size: 1.625rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--brand-blue);
+}
+@media (min-width: 1024px) {
+  .hero .episode__headline {
+    font-size: 2.125rem;
+  }
+}
+.hero .episode__headline a {
+  color: inherit;
+}
+.hero time,
+.hero .episode__actions span {
+  color: var(--text-muted);
+  font-size: 0.875rem;
 }
 .hero__poster {
   grid-area: poster;
@@ -2697,6 +2718,15 @@ body {
   align-items: center;
   display: flex;
   gap: var(--space-normal);
+}
+.header__logo {
+  height: 1.375rem;
+  width: auto;
+}
+@media (min-width: 1280px) {
+  .header__logo {
+    height: 1.75rem;
+  }
 }
 .header__title, .header__link {
   font-size: 0.875rem;
@@ -2810,12 +2840,14 @@ body {
 
 .footer {
   grid-column: 1/-1;
+  background: var(--brand-navy-deep);
+  color: var(--white);
 }
 .footer__container {
   grid-column: wide;
   display: flex;
   align-items: center;
-  padding: 2.5rem 0;
+  padding: 3rem 0;
 }
 .footer__title {
   font-weight: bold;
@@ -2825,13 +2857,17 @@ body {
   gap: var(--space-normal);
 }
 .footer__title, .footer__link {
+  color: var(--white);
   font-size: 0.875rem;
   line-height: 1.375rem;
 }
 .footer__title svg, .footer__link svg {
   width: 1.5rem;
   height: 1.5rem;
-  color: var(--black);
+  color: var(--white);
+}
+.footer__link a:hover {
+  text-decoration: underline;
 }
 .footer__social {
   flex: 1;
@@ -2840,60 +2876,68 @@ body {
   align-items: center;
   gap: var(--space-medium);
 }
+.footer__social .footer__link a {
+  display: flex;
+  transition: opacity var(--transition-default);
+}
+.footer__social .footer__link a:hover {
+  opacity: 0.7;
+}
 
 .button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   gap: var(--space-small);
+  white-space: nowrap;
   width: max-content;
+  height: 2.25rem;
+  padding: 0 1.5rem;
   border-radius: 999px;
-  transition: background 120ms ease-in-out, color 120ms ease-in-out, border-color 120ms ease-in-out;
-}
-.button:hover {
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 500;
   background: var(--brand-blue);
   color: var(--white);
-  border-color: var(--brand-blue);
+  border: 2px solid var(--brand-blue);
+  cursor: pointer;
+  transition: background-color var(--transition-default), border-color var(--transition-default), color var(--transition-default);
 }
-.button:hover svg {
-  transform: scale(1.05);
+@media (min-width: 1280px) {
+  .button {
+    height: 3rem;
+    padding: 0 2rem;
+  }
+}
+.button:hover {
+  background: var(--brand-blue-hover);
+  border-color: var(--brand-blue-hover);
+  color: var(--white);
 }
 .button svg {
-  width: 2.5rem;
-  height: 2.5rem;
-  transition: transform 120ms ease-in-out;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
 }
 .button--outline {
-  font-size: 16px;
-  line-height: 20px;
+  background: transparent;
   color: var(--brand-blue);
   border: 2px solid var(--brand-blue);
-  padding: 0.625rem 1.875rem;
 }
-@media (min-width: 1024px) {
-  .button--outline {
-    font-size: 18px;
-    line-height: 27px;
-  }
+.button--outline:hover {
+  background: var(--brand-blue);
+  border-color: var(--brand-blue);
+  color: var(--white);
 }
 .button--round {
   border-radius: 999px;
 }
 
-.section--yellow .button {
-  background: var(--brand-blue);
-  color: var(--white);
-  border-color: var(--brand-blue);
-}
-.section--yellow .button:hover {
-  background: var(--brand-blue-accent);
-  border-color: var(--brand-blue-accent);
-}
-
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-small);
-  margin: var(--space-large) 0;
+  gap: var(--space-normal);
 }
 .buttons > * {
   flex-shrink: 0;
@@ -2902,20 +2946,52 @@ body {
 .section {
   grid-column: narrow;
 }
-.section--grey {
-  grid-column: 1/-1;
-  background: #f4f4f4;
-}
-.section--yellow {
+.section--cta {
   grid-column: 1/-1;
   background: var(--brand-tint);
-  color: var(--brand-blue);
-  padding: var(--space-large) 0;
+  padding: var(--space-extra-large) 0;
 }
-.section--yellow .section-title,
-.section--yellow .section-title:after {
+.section--cta .section__content {
+  grid-column: wide;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section--cta .section-title {
   color: var(--brand-blue);
-  border-color: var(--brand-blue);
+  text-align: center;
+  max-width: none;
+  margin: 0 0 var(--space-small);
+  font-size: 1.75rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+@media (min-width: 1280px) {
+  .section--cta .section-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+.section--cta .section-title:after {
+  display: none;
+}
+.section--cta p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+.section--cta .buttons {
+  justify-content: center;
+  margin-top: var(--space-large);
+}
+.section--cta .button svg {
+  width: auto;
+  height: 1.25rem;
+}
+.section--cta .button svg path,
+.section--cta .button svg g path {
+  fill: currentColor;
 }
 .section__content {
   grid-column: wide;

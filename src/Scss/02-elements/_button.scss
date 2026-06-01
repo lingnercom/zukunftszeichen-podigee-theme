@@ -1,42 +1,62 @@
 @use "../00-utilities" as *;
 
+//
+// Buttons follow the Stefan Lingner design system: solid navy pills,
+// 14px medium weight, fully rounded, 36px tall (48px from large up).
+//
 .button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   gap: var(--space-small);
+  white-space: nowrap;
   width: max-content;
+
+  height: remcalc(36);
+  padding: 0 remcalc(24);
   border-radius: 999px;
-  transition: background 120ms ease-in-out, color 120ms ease-in-out,
-    border-color 120ms ease-in-out;
+
+  font-size: remcalc(14);
+  line-height: 1;
+  font-weight: 500;
+
+  background: var(--brand-blue);
+  color: var(--white);
+  border: 2px solid var(--brand-blue);
+  cursor: pointer;
+
+  transition: background-color var(--transition-default),
+    border-color var(--transition-default), color var(--transition-default);
+
+  @media (min-width: $l) {
+    height: remcalc(48);
+    padding: 0 remcalc(32);
+  }
 
   &:hover {
-    background: var(--brand-blue);
+    background: var(--brand-blue-hover);
+    border-color: var(--brand-blue-hover);
     color: var(--white);
-    border-color: var(--brand-blue);
-
-    svg {
-      transform: scale(1.05);
-    }
   }
 
   svg {
-    width: remcalc(40);
-    height: remcalc(40);
-    transition: transform 120ms ease-in-out;
+    width: remcalc(20);
+    height: remcalc(20);
+    flex-shrink: 0;
   }
 
+  // Secondary / outline variant
   &--outline {
-    font-size: 16px;
-    line-height: 20px;
-
-    @media (min-width: $m) {
-      font-size: 18px;
-      line-height: 27px;
-    }
-
+    background: transparent;
     color: var(--brand-blue);
     border: 2px solid var(--brand-blue);
-    padding: remcalc(10) remcalc(30);
+
+    &:hover {
+      background: var(--brand-blue);
+      border-color: var(--brand-blue);
+      color: var(--white);
+    }
   }
 
   &--round {
@@ -44,23 +64,10 @@
   }
 }
 
-// Subscribe / follow buttons sit on the tinted section as solid pills
-.section--yellow .button {
-  background: var(--brand-blue);
-  color: var(--white);
-  border-color: var(--brand-blue);
-
-  &:hover {
-    background: var(--brand-blue-accent);
-    border-color: var(--brand-blue-accent);
-  }
-}
-
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-small);
-  margin: var(--space-large) 0;
+  gap: var(--space-normal);
 
   & > * {
     flex-shrink: 0;

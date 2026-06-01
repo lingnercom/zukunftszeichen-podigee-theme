@@ -21,6 +21,15 @@
     gap: var(--space-normal);
   }
 
+  &__logo {
+    height: remcalc(22);
+    width: auto;
+
+    @media (min-width: $l) {
+      height: remcalc(28);
+    }
+  }
+
   &__title,
   &__link {
     font-size: remcalc(14);
