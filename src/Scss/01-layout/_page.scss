@@ -19,6 +19,7 @@ body {
   font-size: remcalc(20);
   line-height: remcalc(26);
   font-weight: 900;
+  color: var(--brand-blue);
 
   @media (min-width: $l) {
     font-size: remcalc(28);
@@ -31,7 +32,7 @@ body {
     width: 100%;
     max-width: 10ch;
     padding-bottom: remcalc(4);
-    border-bottom: remcalc(6) solid var(--black);
+    border-bottom: remcalc(6) solid var(--brand-blue);
   }
 
   margin-bottom: var(--space-medium);

@@ -40,9 +40,17 @@
 
   --color-background: #f9f8f8;
 
-  --podigee-color: #f5df4d;
-  --main-player-color: #f5df4d;
-  --main-player-light-color: #f7d5cf;
+  //
+  // Brand palette (Stefan Lingner / Zukunftszeichen)
+  //
+  --brand-blue: #052d6e; // primary dark blue
+  --brand-blue-accent: #1032cf; // links / accents
+  --brand-tint: #eff0f9; // light section background
+  --brand-blue-soft: #becafd; // soft borders / highlights
+
+  --podigee-color: var(--brand-blue);
+  --main-player-color: var(--brand-blue);
+  --main-player-light-color: var(--brand-blue-soft);
   --player-contrast-text: #ffffff;
   --black: #000000;
   --white: #ffffff;

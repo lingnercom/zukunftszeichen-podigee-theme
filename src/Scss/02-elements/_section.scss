@@ -13,11 +13,18 @@
 
   &--yellow {
     grid-column: 1/-1;
-    background: #faec95;
+    background: var(--brand-tint);
+    color: var(--brand-blue);
 
     padding: var(--space-large) 0;
 
     @extend %layout-grid;
+
+    .section-title,
+    .section-title:after {
+      color: var(--brand-blue);
+      border-color: var(--brand-blue);
+    }
   }
 
   &__content {

@@ -5,15 +5,14 @@
   align-items: center;
   gap: var(--space-small);
   width: max-content;
-  transition: background 120ms ease-in-out;
+  border-radius: 999px;
+  transition: background 120ms ease-in-out, color 120ms ease-in-out,
+    border-color 120ms ease-in-out;
 
   &:hover {
-    background: black;
-    color: white;
-
-    svg * {
-      fill: white;
-    }
+    background: var(--brand-blue);
+    color: var(--white);
+    border-color: var(--brand-blue);
 
     svg {
       transform: scale(1.05);
@@ -35,12 +34,25 @@
       line-height: 27px;
     }
 
-    border: 2px solid var(--black);
+    color: var(--brand-blue);
+    border: 2px solid var(--brand-blue);
     padding: remcalc(10) remcalc(30);
   }
 
   &--round {
-    border-radius: 65px;
+    border-radius: 999px;
+  }
+}
+
+// Subscribe / follow buttons sit on the tinted section as solid pills
+.section--yellow .button {
+  background: var(--brand-blue);
+  color: var(--white);
+  border-color: var(--brand-blue);
+
+  &:hover {
+    background: var(--brand-blue-accent);
+    border-color: var(--brand-blue-accent);
   }
 }
 

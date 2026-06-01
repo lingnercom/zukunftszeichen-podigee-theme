@@ -51,9 +51,13 @@ Only target Chrome
     --grid-inset) [wide-start narrow-start] 1fr [narrow-end wide-end] var(--grid-inset);
   --grid-gutter: 1.5rem;
   --color-background: #f9f8f8;
-  --podigee-color: #f5df4d;
-  --main-player-color: #f5df4d;
-  --main-player-light-color: #f7d5cf;
+  --brand-blue: #052d6e;
+  --brand-blue-accent: #1032cf;
+  --brand-tint: #eff0f9;
+  --brand-blue-soft: #becafd;
+  --podigee-color: var(--brand-blue);
+  --main-player-color: var(--brand-blue);
+  --main-player-light-color: var(--brand-blue-soft);
   --player-contrast-text: #ffffff;
   --black: #000000;
   --white: #ffffff;
@@ -2579,6 +2583,7 @@ body {
   font-size: 1.25rem;
   line-height: 1.625rem;
   font-weight: 900;
+  color: var(--brand-blue);
   margin-bottom: var(--space-medium);
   margin-top: var(--space-extra-large);
   max-width: 40ch;
@@ -2595,7 +2600,7 @@ body {
   width: 100%;
   max-width: 10ch;
   padding-bottom: 0.25rem;
-  border-bottom: 0.375rem solid var(--black);
+  border-bottom: 0.375rem solid var(--brand-blue);
 }
 
 .hero {
@@ -2841,14 +2846,13 @@ body {
   align-items: center;
   gap: var(--space-small);
   width: max-content;
-  transition: background 120ms ease-in-out;
+  border-radius: 999px;
+  transition: background 120ms ease-in-out, color 120ms ease-in-out, border-color 120ms ease-in-out;
 }
 .button:hover {
-  background: black;
-  color: white;
-}
-.button:hover svg * {
-  fill: white;
+  background: var(--brand-blue);
+  color: var(--white);
+  border-color: var(--brand-blue);
 }
 .button:hover svg {
   transform: scale(1.05);
@@ -2861,7 +2865,8 @@ body {
 .button--outline {
   font-size: 16px;
   line-height: 20px;
-  border: 2px solid var(--black);
+  color: var(--brand-blue);
+  border: 2px solid var(--brand-blue);
   padding: 0.625rem 1.875rem;
 }
 @media (min-width: 1024px) {
@@ -2871,7 +2876,17 @@ body {
   }
 }
 .button--round {
-  border-radius: 65px;
+  border-radius: 999px;
+}
+
+.section--yellow .button {
+  background: var(--brand-blue);
+  color: var(--white);
+  border-color: var(--brand-blue);
+}
+.section--yellow .button:hover {
+  background: var(--brand-blue-accent);
+  border-color: var(--brand-blue-accent);
 }
 
 .buttons {
@@ -2893,8 +2908,14 @@ body {
 }
 .section--yellow {
   grid-column: 1/-1;
-  background: #faec95;
+  background: var(--brand-tint);
+  color: var(--brand-blue);
   padding: var(--space-large) 0;
+}
+.section--yellow .section-title,
+.section--yellow .section-title:after {
+  color: var(--brand-blue);
+  border-color: var(--brand-blue);
 }
 .section__content {
   grid-column: wide;
@@ -2919,6 +2940,171 @@ body {
 }
 .pagination a:hover {
   text-decoration: underline;
+}
+
+.post-show-notes,
+.post-downloads,
+.episode__long-text {
+  max-width: 70ch;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+@media (min-width: 1024px) {
+  .post-show-notes,
+  .post-downloads,
+  .episode__long-text {
+    font-size: 18px;
+  }
+}
+.post-show-notes p,
+.post-show-notes ul,
+.post-show-notes ol,
+.post-show-notes blockquote,
+.post-show-notes figure,
+.post-downloads p,
+.post-downloads ul,
+.post-downloads ol,
+.post-downloads blockquote,
+.post-downloads figure,
+.episode__long-text p,
+.episode__long-text ul,
+.episode__long-text ol,
+.episode__long-text blockquote,
+.episode__long-text figure {
+  margin: 0 0 var(--space-normal);
+}
+.post-show-notes > *:last-child,
+.post-downloads > *:last-child,
+.episode__long-text > *:last-child {
+  margin-bottom: 0;
+}
+.post-show-notes p:empty,
+.post-downloads p:empty,
+.episode__long-text p:empty {
+  display: none;
+}
+.post-show-notes h1,
+.post-show-notes h2,
+.post-show-notes h3,
+.post-show-notes h4,
+.post-show-notes h5,
+.post-show-notes h6,
+.post-downloads h1,
+.post-downloads h2,
+.post-downloads h3,
+.post-downloads h4,
+.post-downloads h5,
+.post-downloads h6,
+.episode__long-text h1,
+.episode__long-text h2,
+.episode__long-text h3,
+.episode__long-text h4,
+.episode__long-text h5,
+.episode__long-text h6 {
+  color: var(--brand-blue);
+  font-weight: 700;
+  line-height: 1.3;
+  margin: var(--space-large) 0 var(--space-small);
+}
+.post-show-notes h1,
+.post-downloads h1,
+.episode__long-text h1 {
+  font-size: 28px;
+}
+.post-show-notes h2,
+.post-downloads h2,
+.episode__long-text h2 {
+  font-size: 24px;
+}
+.post-show-notes h3,
+.post-downloads h3,
+.episode__long-text h3 {
+  font-size: 20px;
+}
+.post-show-notes h4,
+.post-show-notes h5,
+.post-show-notes h6,
+.post-downloads h4,
+.post-downloads h5,
+.post-downloads h6,
+.episode__long-text h4,
+.episode__long-text h5,
+.episode__long-text h6 {
+  font-size: 18px;
+}
+.post-show-notes strong,
+.post-show-notes b,
+.post-downloads strong,
+.post-downloads b,
+.episode__long-text strong,
+.episode__long-text b {
+  font-weight: 700;
+}
+.post-show-notes em,
+.post-show-notes i,
+.post-downloads em,
+.post-downloads i,
+.episode__long-text em,
+.episode__long-text i {
+  font-style: italic;
+}
+.post-show-notes a,
+.post-downloads a,
+.episode__long-text a {
+  color: var(--brand-blue-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.post-show-notes a:hover,
+.post-downloads a:hover,
+.episode__long-text a:hover {
+  text-decoration: none;
+}
+.post-show-notes ul,
+.post-show-notes ol,
+.post-downloads ul,
+.post-downloads ol,
+.episode__long-text ul,
+.episode__long-text ol {
+  padding-left: 1.4em;
+}
+.post-show-notes ul,
+.post-downloads ul,
+.episode__long-text ul {
+  list-style: disc;
+}
+.post-show-notes ol,
+.post-downloads ol,
+.episode__long-text ol {
+  list-style: decimal;
+}
+.post-show-notes li,
+.post-downloads li,
+.episode__long-text li {
+  margin-bottom: var(--space-small);
+}
+.post-show-notes blockquote,
+.post-downloads blockquote,
+.episode__long-text blockquote {
+  padding-left: var(--space-normal);
+  border-left: 0.25rem solid var(--brand-blue-soft);
+  color: var(--brand-blue);
+  font-style: italic;
+}
+.post-show-notes img,
+.post-downloads img,
+.episode__long-text img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.post-show-notes hr,
+.post-downloads hr,
+.episode__long-text hr {
+  border: 0;
+  border-top: 1px solid var(--brand-blue-soft);
+  margin: var(--space-large) 0;
 }
 
 /*# sourceMappingURL=application.css.map */
