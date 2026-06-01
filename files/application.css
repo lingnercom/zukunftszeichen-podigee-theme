@@ -2727,12 +2727,12 @@ main {
   gap: var(--space-normal);
 }
 .header__logo {
-  height: 1.375rem;
+  height: 2.125rem;
   width: auto;
 }
 @media (min-width: 1280px) {
   .header__logo {
-    height: 1.75rem;
+    height: 2.75rem;
   }
 }
 .header__title, .header__link {

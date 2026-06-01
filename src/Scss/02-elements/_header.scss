@@ -30,11 +30,11 @@
   }
 
   &__logo {
-    height: remcalc(22);
+    height: remcalc(34);
     width: auto;
 
     @media (min-width: $l) {
-      height: remcalc(28);
+      height: remcalc(44);
     }
   }
 
