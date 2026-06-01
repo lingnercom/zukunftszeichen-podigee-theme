@@ -6,23 +6,20 @@
   grid-column: 1/-1;
   @extend %layout-grid;
 
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 20;
 
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+  background: #ffffffe0;
+  backdrop-filter: blur(5px);
 
   &__container {
     grid-column: wide;
 
     display: flex;
     align-items: center;
-    padding: remcalc(14) 0;
-
-    @media (min-width: $l) {
-      padding: remcalc(18) 0;
-    }
+    height: var(--header-height);
   }
 
   &__title {

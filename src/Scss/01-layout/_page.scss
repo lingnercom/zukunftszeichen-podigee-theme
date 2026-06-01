@@ -4,6 +4,11 @@ body {
   background: var(--color-background);
 }
 
+// Offset content for the fixed header so the hero isn't covered.
+main {
+  padding-top: var(--header-height);
+}
+
 * {
   font-family: "PFDin Text Comp Pro", Arial, sans-serif;
 }
